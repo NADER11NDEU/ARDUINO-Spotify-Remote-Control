@@ -1,8 +1,6 @@
 # nader
 Arduino Spotify Control With C# Spotify Api
 
-![alt text](https://i.imgur.com/EJ0SVOS.png)
-![alt_text](https://i.imgur.com/YALNEdz.png)
 ![alt_text](https://i.imgur.com/AciutFS.png)
 
 Info:
