@@ -1,4 +1,7 @@
-# nader
+# Hi 
+
+Hello, this is an university project which we have to use arduino. So I decided to make remote control for active devices which are using Spotify at the same time :D I do not know C# properly. I didnt work on .NET applications before, so some of my codes may seem absurd or unnecessary to you, just ignore them. See this project as a reference and find out what works for you.
+
 Arduino Spotify Control With C# Spotify Api
 
 ![alt_text](https://i.imgur.com/AciutFS.png)
