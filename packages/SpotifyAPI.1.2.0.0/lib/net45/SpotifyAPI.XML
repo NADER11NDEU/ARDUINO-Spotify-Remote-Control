@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpotifyAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SpotifyAPI.Album">
+            <summary>
+                Represents an album.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.ResourcePromise`1">
+            <summary>
+                Represents a resource.
+            </summary>
+            <typeparam name="T">The base resource of the resource.</typeparam>
+        </member>
+        <member name="M:SpotifyAPI.ResourcePromise`1.#ctor(System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="!:ResourcePromise`1"/> class.
+            </summary>
+            <param name="name">The name of the resource.</param>
+            <param name="uri">The uri of the resource.</param>
+        </member>
+        <member name="M:SpotifyAPI.ResourcePromise`1.#ctor(`0)">
+            <summary>
+                Initializes a new instance of the <see cref="!:ResourcePromise`1"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of this resource.</param>
+        </member>
+        <member name="M:SpotifyAPI.ResourcePromise`1.ToString">
+            <summary>
+                Returns a string that represents the current object.
+            </summary>
+            <returns>
+                A string that represents the current object.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="P:SpotifyAPI.ResourcePromise`1.Name">
+            <summary>
+                Gets the name of this resource.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ResourcePromise`1.URI">
+            <summary>
+                Gets the URI of this resource.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ResourcePromise`1.OpenURL">
+            <summary>
+                Gets the url to show this resource in a browser.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ResourcePromise`1.Identifier">
+            <summary>
+                Gets the identifier of this resource.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ResourcePromise`1.Type">
+            <summary>
+                Gets the type of this resource.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.ResourcePromise`1.BaseResource">
+            <summary>
+                Represents the json resource as provided by the API.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Album.#ctor(System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Album"/> class.
+            </summary>
+            <param name="name">The name of the album.</param>
+            <param name="uri">The uri of the album.</param>
+        </member>
+        <member name="M:SpotifyAPI.Album.#ctor(SpotifyAPI.Album.Resource)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Album"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of the album.</param>
+        </member>
+        <member name="P:SpotifyAPI.Album.Genres">
+            <summary>
+                Gets a collection of genres of this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Album.Artists">
+            <summary>
+                Gets a collection of <see cref="T:SpotifyAPI.Artist">Artists</see> featured on this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Album.Images">
+            <summary>
+                Gets a collection of cover art images of this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Album.Tracks">
+            <summary>
+                Gets a collection of tracks of this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Album.ReleaseDate">
+            <summary>
+                Gets the release date of this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Album.ReleaseDatePrecision">
+            <summary>
+                Gets the release date precision of this <see cref="T:SpotifyAPI.Album"/>.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Album.Resource">
+            <summary>
+                Represents the json resource as provided by the API.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Artist">
+            <summary>
+                Represents an artist.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Artist.#ctor(System.String,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Artist"/> class.
+            </summary>
+            <param name="name">The name of the artist.</param>
+            <param name="uri">The uri of the artist.</param>
+        </member>
+        <member name="M:SpotifyAPI.Artist.#ctor(SpotifyAPI.Artist.Resource)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Artist"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of the artist.</param>
+        </member>
+        <member name="P:SpotifyAPI.Artist.Genres">
+            <summary>
+                Gets a collection of genres of this <see cref="T:SpotifyAPI.Artist"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Artist.Images">
+            <summary>
+                Gets a collection of images of this <see cref="T:SpotifyAPI.Artist"/>.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Artist.Resource">
+            <summary>
+                Represents the json resource as provided by the API.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.ImageResource">
+            <summary>
+                Represents a cover art image.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.ImageResource.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.ImageResource"/> class.
+            </summary>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="url">The URL to the image.</param>
+        </member>
+        <member name="P:SpotifyAPI.ImageResource.Width">
+            <summary>
+                Gets or sets the width of the image.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ImageResource.Height">
+            <summary>
+                Gets or sets the height of the image.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.ImageResource.URL">
+            <summary>
+                Gets or sets the URL to the image.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Spotify">
+            <summary>
+                Represents a spotify client.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Spotify"/> class.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.AutoUpdate(System.Int32)">
+            <summary>
+                Automatically call the <see cref="M:SpotifyAPI.Spotify.Update"/> method.
+            </summary>
+            <param name="interval">Interval in MS in which to update.</param>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.StopAutoUpdate">
+            <summary>
+                Stops automatically calling the <see cref="M:SpotifyAPI.Spotify.Update"/> method.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.Update">
+            <summary>
+                Updates the known state.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.ToString">
+            <summary>
+                Returns a string that represents the current object.
+            </summary>
+            <returns>
+                A string that represents the current object.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.RunHelper">
+            <summary>
+                Starts the spotify helper service.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Spotify.Run">
+            <summary>
+                Starts the spotify client.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.CurrentTrack">
+            <summary>
+                Gets or sets the playing <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsPlaying">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently playing.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsShuffling">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently shuffling.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsRepeating">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently repeating.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsPlayEnabled">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is able to start playing.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsPreviousEnabled">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is able to go back to the previous track.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsNextEnabled">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is able to skip to the next track.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsOnline">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently connected to the network.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsAvailable">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently running and available.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.PlayingTime">
+            <summary>
+                Gets whether <see cref="T:SpotifyAPI.Spotify"/> is currently playing time in seconds.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.Volume">
+            <summary>
+                Gets <see cref="T:SpotifyAPI.Spotify"/>'s current volume.
+            </summary>
+        </member>
+        <member name="E:SpotifyAPI.Spotify.TrackChanged">
+            <summary>
+                Fired once <see cref="P:SpotifyAPI.Spotify.CurrentTrack"/> changes.
+            </summary>
+        </member>
+        <member name="E:SpotifyAPI.Spotify.VolumeChanged">
+            <summary>
+                Fired once <see cref="P:SpotifyAPI.Spotify.Volume"/> changes.
+            </summary>
+        </member>
+        <member name="E:SpotifyAPI.Spotify.PlayStateChanged">
+            <summary>
+                Fired once <see cref="P:SpotifyAPI.Spotify.IsPlaying"/> changes.
+            </summary>
+        </member>
+        <member name="E:SpotifyAPI.Spotify.PlayingTimeChanged">
+            <summary>
+                Fired once <see cref="P:SpotifyAPI.Spotify.PlayingTime"/> changes.
+            </summary>
+        </member>
+        <member name="E:SpotifyAPI.Spotify.AvailabilityChanged">
+            <summary>
+                Fired once <see cref="P:SpotifyAPI.Spotify.IsAvailable"/> changes.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsRunning">
+            <summary>
+                Gets whether spotify is currently running.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Spotify.IsHelperRunning">
+            <summary>
+                Gets whether the spotify helper is currently running.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Track">
+            <summary>
+                Represents a track.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Track.#ctor(System.String,System.String,System.Int32,SpotifyAPI.Artist,SpotifyAPI.Album)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Track"/> class.
+            </summary>
+            <param name="name">The name of the track.</param>
+            <param name="uri">The uri of the track.</param>
+            <param name="length">The length of the track in seconds.</param>
+            <param name="artist">The <see cref="P:SpotifyAPI.Track.Artist"/> of the track.</param>
+            <param name="album">The <see cref="P:SpotifyAPI.Track.Album"/> of the track.</param>
+        </member>
+        <member name="M:SpotifyAPI.Track.#ctor(SpotifyAPI.Track.Resource)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Track"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of the track.</param>
+        </member>
+        <member name="M:SpotifyAPI.Track.#ctor(SpotifyAPI.Track.Resource,SpotifyAPI.Album)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.Track"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of the track.</param>
+            <param name="album">The <see cref="P:SpotifyAPI.Track.Album"/> of the track.</param>
+        </member>
+        <member name="M:SpotifyAPI.Track.ToString">
+            <summary>
+                Returns a string that represents this <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+            <returns>
+                A string that represents this <see cref="T:SpotifyAPI.Track"/>.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:SpotifyAPI.Track.Equals(System.Object)">
+            <summary>
+                Determines whether the specified <see cref="T:System.Object" /> is equal to the current
+                <see cref="T:System.Object" />.
+            </summary>
+            <returns>
+                true if the specified object  is equal to the current object; otherwise, false.
+            </returns>
+            <param name="obj">The object to compare with the current object. </param>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:SpotifyAPI.Track.Equals(SpotifyAPI.Track)">
+            <summary>
+                Determines whether the specified <see cref="T:SpotifyAPI.Track"/> is equal to the current <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+            <param name="other">The <see cref="T:SpotifyAPI.Track"/> to compare with the current <see cref="T:SpotifyAPI.Track"/>.</param>
+            <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>
+        </member>
+        <member name="M:SpotifyAPI.Track.GetHashCode">
+            <summary>
+                Serves as a hash function for a particular type.
+            </summary>
+            <returns>
+                A hash code for the current <see cref="T:System.Object" />.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="P:SpotifyAPI.Track.Artist">
+            <summary>
+                Gets the <see cref="P:SpotifyAPI.Track.Artist"/> of this <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Track.Album">
+            <summary>
+                Gets the <see cref="P:SpotifyAPI.Track.Album"/> of this <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Track.Length">
+            <summary>
+                Gets the length of this <see cref="T:SpotifyAPI.Track"/> in MS.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Track.AlbumImages">
+            <summary>
+                Gets this <see cref="T:SpotifyAPI.Track"/>'s <see cref="P:SpotifyAPI.Track.Album"/>'s cover images.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.Track.Artists">
+            <summary>
+                Gets the artists featured in this <see cref="T:SpotifyAPI.Track"/>.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Track.Resource">
+            <summary>
+                Represents the json resource as provided by the API.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.Timestamp">
+            <summary>
+                Contains methods for generation timestamps
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.Timestamp.Generate">
+            <summary>
+                Generates a timestamp.
+            </summary>
+            <returns>Timestamp in seconds.</returns>
+        </member>
+        <member name="T:SpotifyAPI.TrackList">
+            <summary>
+                Represents an album's track list.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.TrackList.#ctor(SpotifyAPI.TrackListPart)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.TrackList"/>.
+            </summary>
+            <param name="first">The first part of the list.</param>
+        </member>
+        <member name="M:SpotifyAPI.TrackList.GetEnumerator">
+            <summary>
+                Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+                A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="M:SpotifyAPI.TrackList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+                Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+                An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="P:SpotifyAPI.TrackList.Count">
+            <summary>
+                Gets the number of tracks in this <see cref="T:SpotifyAPI.TrackList"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.TrackList.Item(System.Int32)">
+            <summary>
+                Gets the <see cref="T:SpotifyAPI.Track"/> at a given index in this <see cref="T:SpotifyAPI.TrackList"/>.
+            </summary>
+            <param name="index">The index of which to get the <see cref="T:SpotifyAPI.Track"/>.</param>
+            <returns>The <see cref="T:SpotifyAPI.Track"/> at the given <paramref name="index"/>.</returns>
+        </member>
+        <member name="T:SpotifyAPI.TrackListPart">
+            <summary>
+                Represents a part of an album's track list.
+            </summary>
+        </member>
+        <member name="M:SpotifyAPI.TrackListPart.#ctor(System.String,SpotifyAPI.Album)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.TrackListPart"/> class.
+            </summary>
+            <param name="url">The url to the list.</param>
+            <param name="album">The album of the list.</param>
+        </member>
+        <member name="M:SpotifyAPI.TrackListPart.#ctor(SpotifyAPI.TrackListPart.Resource,SpotifyAPI.Album)">
+            <summary>
+                Initializes a new instance of the <see cref="T:SpotifyAPI.TrackListPart"/> class.
+            </summary>
+            <param name="partialResource">The partial resource of the list.</param>
+            <param name="album">The album of the list.</param>
+        </member>
+        <member name="P:SpotifyAPI.TrackListPart.Tracks">
+            <summary>
+                Gets the tracks in this <see cref="T:SpotifyAPI.TrackListPart"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.TrackListPart.Next">
+            <summary>
+                Gets the next <see cref="T:SpotifyAPI.TrackListPart"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.TrackListPart.Previous">
+            <summary>
+                Gets the previous <see cref="T:SpotifyAPI.TrackListPart"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.TrackListPart.Offset">
+            <summary>
+                Gets the offset from the first track to this <see cref="T:SpotifyAPI.TrackListPart"/>.
+            </summary>
+        </member>
+        <member name="P:SpotifyAPI.TrackListPart.Total">
+            <summary>
+                Gets the total number of tracks in the list this <see cref="T:SpotifyAPI.TrackListPart"/> is part of.
+            </summary>
+        </member>
+        <member name="T:SpotifyAPI.TrackListPart.Resource">
+            <summary>
+                Represents the json resource as provided by the API.
+            </summary>
+        </member>
+    </members>
+</doc>
