@@ -5,9 +5,10 @@ Arduino Spotify Control With C# Spotify Api
 ![alt_text](https://i.imgur.com/YALNEdz.png)
 ![alt_text](https://i.imgur.com/AciutFS.png)
 
-
-Infos:
+Info:
 
 Spotify Web Api: https://developer.spotify.com/documentation/web-api/
 
 Spotify API-Net: https://github.com/JohnnyCrazy/SpotifyAPI-NET
+
+Bunifu Framework: https://bunifuframework.com/
