@@ -18,17 +18,29 @@ Remote Controller:
 ![alt_text](https://i.imgur.com/3LikE9M.png)
 
 Buttons:
+
 CH- : Delete current song from user favorite list
+
 CH+:  Add current song to user favorite list
+
 CH:   Play user favorite list
+
 |<<:  Play previous track
+
 >>|:  Play next track
+
 Play_Pause.
+
 -	: Volume up.
+
 + : Volume down.
+
 EQ:  Change featured list country
+
 0-9: Play track list on featured list. (0-9 index number)
+
 100+: |<<< : Skip 30 secs, EQ: shuffle = !shuffle 
+
 200+: |<<< : Skip 60 secs, EQ: shuffle = !shuffle
 
 Button Arrays:
