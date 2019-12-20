@@ -3,7 +3,6 @@ Arduino Spotify Control With C# Spotify Api
 
 ![alt_text](https://i.imgur.com/AciutFS.png)
 
-Info:
 
 Spotify Web Api: https://developer.spotify.com/documentation/web-api/
 
