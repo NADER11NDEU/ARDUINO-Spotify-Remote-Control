@@ -18,7 +18,7 @@ Bunifu Framework: https://bunifuframework.com/
 
 Well, with this project we will be able to control active spotify devices with Arduino. How we gonna do that ? We will use serial communication.
 
-We will connect our arduino with our pc (use USB2.0 / 3.0) , and arduino will read which button we pressed on remote controller (ir reciver), then it will send it to our C# application. Our C# application will read which button we pressed and for example if we pressed stop music button then it will stop the music.
+We will connect our arduino with our pc (use USB2.0 / 3.0) , and arduino will read which button we pressed on remote controller (ir reciver), then it will send it to our C# application. Our C# application will read which button we pressed and for example if we pressed stop music button then it will stop the music. Also our C# application will send Music Name & Singer Name. And we will display them on our 16x2 LCD Display Screen. 
 It is simple like that. If you have wifi module , you can do nearly same things (like stop,play music, go next etc) but as you know arduino actually does not have multi threading support so you have to deal with a lot of bugs. Thats why I made it on computer, not on Arduino. Also I hadnt have wifi module.
 
 My suggestion: Use bluetooth module for send your data to computer, and power up arduino with rechargable battery. As I said before, use this project as referance :) 
@@ -28,13 +28,14 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
 
 # Circuit Elements
+```
 1- Remote Controller
 2- IR Reciever (VS1838B)
 3- Leds for debug
 4- 220-500 ohm resistance
 5- 16x2 LCD Display
 6- LCD I2C/IIC Converter Card
-
+```
 # Remote Controller:
 ![alt_text](https://i.imgur.com/3LikE9M.png)
 
