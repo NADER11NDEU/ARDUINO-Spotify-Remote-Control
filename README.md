@@ -46,11 +46,14 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 ```
 * Display Album , track, list informations.
 * Display Album Image
-* Control Volume, next song etc. (with remote controller and on applications)
+* Control Volume, next song etc. (with remote controller, application)
 * Display Featured list, featured market
-* Add current song to your spotify favorite list
-* Delete current song from your spotify favorite list
-* Play your favorite list
+* Play Featured list (with remote controller, application)
+* Add current song to your spotify favorite list (with remote controller, application)
+* Delete current song from your spotify favorite list (with remote controller, application)
+* Play your favorite list (with remote controller, application)
+* Set Shuffle (with remote controller, application)
+* Display Singer and Song name on LCD Screen
 ```
 
 # Arduino Circuit
