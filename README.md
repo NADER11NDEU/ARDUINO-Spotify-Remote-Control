@@ -13,11 +13,15 @@ Spotify API-Net: https://github.com/JohnnyCrazy/SpotifyAPI-NET
 
 Bunifu Framework: https://bunifuframework.com/
 
+ 
 
-Remote Controller:
+# Arduino Circuit
+![alt_text](https://i.imgur.com/zyQlwpS.png)
+![alt_text](https://i.imgur.com/TlGhO2C.png)
+
+# Remote Controller:
 ![alt_text](https://i.imgur.com/3LikE9M.png)
 
-Buttons:
 
 CH- : Delete current song from user favorite list
 
