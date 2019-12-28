@@ -42,6 +42,17 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 15- Now you can control your active devices spotify with your remote controller. Have a fun :)
 ```
 
+# Features
+```
+* Display Album , track, list informations.
+* Display Album Image
+* Control Volume, next song etc. (with remote controller and on applications)
+* Display Featured list, featured market
+* Add current song to your spotify favorite list
+* Delete current song from your spotify favorite list
+* Play your favorite list
+```
+
 # Arduino Circuit
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
