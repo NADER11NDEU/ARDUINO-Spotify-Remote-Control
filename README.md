@@ -63,7 +63,7 @@ Button Array:
 
 2- [Bunifu Framework](https://bunifuframework.com/) I designed my form wtih this framework.
 
-3- Dr. Onur Buğra KOLCU - He taught arduino to me and his students in a short time (in 3 weeks).
+3- Dr. Onur Bugra KOLCU - He taught arduino to me and his students in a short time.
 
 4- Nader11ndeu (me)
 
