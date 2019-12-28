@@ -27,6 +27,14 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
 
+# Circuit Elements
+1- Remote Controller
+2- IR Reciever (VS1838B)
+3- Leds for debug
+4- 220-500 ohm resistance
+5- 16x2 LCD Display
+6- LCD I2C/IIC Converter Card
+
 # Remote Controller:
 ![alt_text](https://i.imgur.com/3LikE9M.png)
 
