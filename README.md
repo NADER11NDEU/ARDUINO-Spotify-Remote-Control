@@ -42,9 +42,6 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 15- Now you can control your active devices spotify with your remote controller. Have a fun :)
 ```
 
-![alt_text](https://i.imgur.com/mRYPfd7.png)
-
-```
 # Arduino Circuit
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
