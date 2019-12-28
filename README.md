@@ -23,6 +23,28 @@ It is simple like that. If you have wifi module , you can do nearly same things 
 
 My suggestion: Use bluetooth module for send your data to computer, and power up arduino with rechargable battery. As I said before, use this project as referance :) 
 
+# Usage
+```
+1- Download our C# source
+2- Open it with Visual Studio
+3- Press Add Reference and select Bunifu_UI_v1.5.3.dll (you can get this dll from Release.)
+4- Build the project and reopen visual studio and our project.
+5- Change "Auth_Client_id ,Auth_Client_sr and Redirect URI's (you can get your client id, client sr and r_uris on your spotify dashboard, just create new client on your spotify developer dashboard)
+6- Run our application
+7- Select scopes and press Get Auth Link
+8- It will ask you for premission, accept it. (I used webbrowser)
+9- Press Spotify Access Token button on tab menu
+10- Press Get Tokens button
+11- Now we have access token, refresh token etc. We can start Spotify NET API ...
+12- Press Spotify Control button on Tab Menu
+13- Press Connect to Api, now you will debug which devices are connected with spotify, what is current song etc etc.
+14- Select your arduino port and press Connect to Port
+15- Now you can control your active devices spotify with your remote controller. Have a fun :)
+```
+
+![alt_text](https://i.imgur.com/mRYPfd7.png)
+
+```
 # Arduino Circuit
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
