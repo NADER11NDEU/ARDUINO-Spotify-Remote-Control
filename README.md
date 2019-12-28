@@ -57,4 +57,11 @@ Button Array:
 {0xFFE01F,0xFFA857,0xFFC23D,0xFF02FD,0xFF22DD,0xFFE21D,0xFFA25D,0xFF629D,0xFF6897,0xFF30CF,0xFF18E7,0xFF7A85,0xFF10EF,0xFF38C7,0xFF5AA5,0xFF42BD,0xFF4AB5,0xFF52AD,0xFF906F,0xFF9867,0xFFB04F,0xFFA857};
 ```
 
-I'll add more informations & usages about our application soon...
+# Credits:
+1- [JohnnyCrazy](https://github.com/JohnnyCrazy) for his awesome Spotify .NET Api (it saved my time).
+2- [Bunifu Framework](https://bunifuframework.com/) I designed my form wtih this framework.
+3- Dr. Onur Buğra KOLCU - He taught arduino to me and his students in a short time (in 3 weeks).
+4- Nader11ndeu (me)
+
+
+ 
