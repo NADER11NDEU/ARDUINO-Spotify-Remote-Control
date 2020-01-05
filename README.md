@@ -78,9 +78,9 @@ CH+:  Add current song to user favorite list
 CH:   Play user favorite list
 |<<:  Play previous track
 >>|:  Play next track
-Play_Pause.
--	: Volume up.
-+ : Volume down.
+|> Play_Pause.
+-	: Volume down.
++ : Volume up.
 EQ:  Change featured list country
 0-9: Play track list on featured list. (0-9 index number)
 100+: |<<< : Skip 30 secs, EQ: shuffle = !shuffle 
@@ -94,7 +94,7 @@ Button Array:
 
 1- [JohnnyCrazy](https://github.com/JohnnyCrazy) for his awesome Spotify .NET Api (it saved my time).
 
-2- [Bunifu Framework](https://bunifuframework.com/) I designed my form wtih this framework.
+2- [Bunifu Framework](https://bunifuframework.com/) I designed my form with this framework.
 
 3- Dr. Onur Bugra KOLCU - He taught arduino to me and his students in a short time.
 
