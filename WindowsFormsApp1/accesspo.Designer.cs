@@ -75,7 +75,6 @@
             this.access_groupbox.ShadowDepth = 20;
             this.access_groupbox.Size = new System.Drawing.Size(682, 558);
             this.access_groupbox.TabIndex = 34;
-            this.access_groupbox.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards2_Paint);
             // 
             // expires_textbox
             // 
@@ -93,7 +92,7 @@
             this.expires_textbox.Size = new System.Drawing.Size(495, 25);
             this.expires_textbox.TabIndex = 48;
             this.expires_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.expires_textbox.OnValueChanged += new System.EventHandler(this.expires_textbox_OnValueChanged);
+  
             // 
             // label12
             // 
@@ -105,7 +104,7 @@
             this.label12.Size = new System.Drawing.Size(73, 17);
             this.label12.TabIndex = 47;
             this.label12.Text = "expires_in:";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+         
             // 
             // tokentype_textbox
             // 
@@ -123,7 +122,7 @@
             this.tokentype_textbox.Size = new System.Drawing.Size(495, 25);
             this.tokentype_textbox.TabIndex = 46;
             this.tokentype_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.tokentype_textbox.OnValueChanged += new System.EventHandler(this.tokentype_textbox_OnValueChanged);
+        
             // 
             // label11
             // 
@@ -135,7 +134,7 @@
             this.label11.Size = new System.Drawing.Size(101, 17);
             this.label11.TabIndex = 45;
             this.label11.Text = "Refresh_token:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+         
             // 
             // refresh_textbox
             // 
@@ -153,7 +152,7 @@
             this.refresh_textbox.Size = new System.Drawing.Size(495, 25);
             this.refresh_textbox.TabIndex = 44;
             this.refresh_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.refresh_textbox.OnValueChanged += new System.EventHandler(this.refresh_textbox_OnValueChanged);
+         
             // 
             // label10
             // 
@@ -165,7 +164,7 @@
             this.label10.Size = new System.Drawing.Size(84, 17);
             this.label10.TabIndex = 43;
             this.label10.Text = "token_type:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+          
             // 
             // label9
             // 
@@ -177,7 +176,7 @@
             this.label9.Size = new System.Drawing.Size(99, 17);
             this.label9.TabIndex = 42;
             this.label9.Text = "Access_token:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+        
             // 
             // access_textbox
             // 
@@ -195,7 +194,7 @@
             this.access_textbox.Size = new System.Drawing.Size(495, 25);
             this.access_textbox.TabIndex = 41;
             this.access_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.access_textbox.OnValueChanged += new System.EventHandler(this.access_textbox_OnValueChanged);
+          
             // 
             // label8
             // 
@@ -207,7 +206,7 @@
             this.label8.Size = new System.Drawing.Size(49, 17);
             this.label8.TabIndex = 40;
             this.label8.Text = "Code:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+           
             // 
             // code_textbox
             // 
@@ -225,7 +224,7 @@
             this.code_textbox.Size = new System.Drawing.Size(495, 25);
             this.code_textbox.TabIndex = 39;
             this.code_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.code_textbox.OnValueChanged += new System.EventHandler(this.textBox5_OnValueChanged);
+            
             // 
             // label7
             // 
@@ -237,7 +236,7 @@
             this.label7.Size = new System.Drawing.Size(94, 17);
             this.label7.TabIndex = 38;
             this.label7.Text = "Response_Uri:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+        
             // 
             // richTextBox1
             // 
@@ -249,7 +248,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(609, 224);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            
             // 
             // get_tokens_button
             // 
@@ -293,7 +292,7 @@
             this.response_textbox.Size = new System.Drawing.Size(495, 25);
             this.response_textbox.TabIndex = 32;
             this.response_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.response_textbox.OnValueChanged += new System.EventHandler(this.textBox4_OnValueChanged);
+            
             // 
             // accesspo
             // 
