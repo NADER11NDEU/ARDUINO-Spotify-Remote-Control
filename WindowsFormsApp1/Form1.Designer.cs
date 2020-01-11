@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class main_form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,39 +29,48 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.bunifuFormFadeTransition1 = new Bunifu.Framework.UI.BunifuFormFadeTransition(this.components);
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.sidemenu = new System.Windows.Forms.Panel();
-            this.btnMnu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.tabButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.tabButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.tabButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.header = new System.Windows.Forms.Panel();
             this.form_minimize_button = new Bunifu.Framework.UI.BunifuImageButton();
             this.form_close_button = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.form_title = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.sidemenu = new System.Windows.Forms.Panel();
+            this.btnMnu = new Bunifu.Framework.UI.BunifuImageButton();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.Access_tab = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Control_tab = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.auth_tab = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFormFadeTransition1 = new Bunifu.Framework.UI.BunifuFormFadeTransition(this.components);
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.gradientPanel1 = new WindowsFormsApp1.GradientPanel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.accesspo1 = new nader11ndeu.accesspo();
+            this.authnew1 = new nader11ndeu.authnew();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.devices_id = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
+            this.label38 = new System.Windows.Forms.Label();
+            this.featuredlist_name = new System.Windows.Forms.ListBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.featuredlist_uri = new System.Windows.Forms.ListBox();
+            this.volume_str = new System.Windows.Forms.Label();
+            this.uri_list = new System.Windows.Forms.ListBox();
+            this.control_groupbox = new Bunifu.Framework.UI.BunifuCards();
+            this.next_song_button = new Bunifu.Framework.UI.BunifuImageButton();
+            this.previous_song_button = new Bunifu.Framework.UI.BunifuImageButton();
+            this.play_song_button = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pause_song_button = new Bunifu.Framework.UI.BunifuImageButton();
+            this.token_timestr = new System.Windows.Forms.Label();
             this.retry_port_button = new Bunifu.Framework.UI.BunifuImageButton();
             this.featured_list_combobox = new Bunifu.Framework.UI.BunifuDropdown();
             this.label37 = new System.Windows.Forms.Label();
-            this.comboBox2 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.port_combo = new Bunifu.Framework.UI.BunifuDropdown();
             this.market_list_combobox = new Bunifu.Framework.UI.BunifuDropdown();
             this.label35 = new System.Windows.Forms.Label();
             this.playlist_name_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -82,23 +91,19 @@
             this.connected_devices = new System.Windows.Forms.ListBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.fav_name_list = new System.Windows.Forms.ListBox();
             this.volume_trackbar = new Bunifu.Framework.UI.BunifuVTrackbar();
             this.port_connect = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.name_list = new System.Windows.Forms.ListBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.next_song_button = new Bunifu.Framework.UI.BunifuImageButton();
-            this.previous_song_button = new Bunifu.Framework.UI.BunifuImageButton();
-            this.play_song_button = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.slider1 = new Bunifu.Framework.UI.BunifuSlider();
-            this.pause_song_button = new Bunifu.Framework.UI.BunifuImageButton();
+            this.duration_current = new System.Windows.Forms.Label();
+            this.duration_max = new System.Windows.Forms.Label();
+            this.duration_slider = new Bunifu.Framework.UI.BunifuSlider();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.album_picturebox = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -116,95 +121,139 @@
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.playlist_uri_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.client_id_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.authorization_button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.client_sr_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.expires_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tokentype_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.refresh_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.access_textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.get_tokens_button = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textBox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.label25 = new System.Windows.Forms.Label();
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.groupboxanimation = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupboxanimation1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.api_timer = new System.Windows.Forms.Timer(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.remotecontrol = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.info_gonder = new System.Windows.Forms.Timer(this.components);
             this.button_locals = new System.Windows.Forms.Timer(this.components);
-            this.sidemenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMnu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.refresh_timer = new System.Windows.Forms.Timer(this.components);
+            bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.form_minimize_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form_close_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sidemenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMnu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.gradientPanel1.SuspendLayout();
-            this.bunifuCards3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.retry_port_button)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.control_groupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.next_song_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.previous_song_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_song_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pause_song_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.bunifuCards1.SuspendLayout();
-            this.bunifuCards2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.retry_port_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.album_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuFormFadeTransition1
+            // bunifuDragControl3
             // 
-            this.bunifuFormFadeTransition1.Delay = 1;
+            bunifuDragControl3.Fixed = true;
+            bunifuDragControl3.Horizontal = true;
+            bunifuDragControl3.TargetControl = this.header;
+            bunifuDragControl3.Vertical = true;
             // 
-            // bunifuSeparator1
+            // header
             // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.groupboxanimation1.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(501, 956);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(852, 46);
-            this.bunifuSeparator1.TabIndex = 29;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.header.Controls.Add(this.form_minimize_button);
+            this.header.Controls.Add(this.form_close_button);
+            this.header.Controls.Add(this.pictureBox1);
+            this.header.Controls.Add(this.form_title);
+            this.groupboxanimation1.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(847, 45);
+            this.header.TabIndex = 37;
+            // 
+            // form_minimize_button
+            // 
+            this.form_minimize_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.form_minimize_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
+            this.form_minimize_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.form_minimize_button.Image = ((System.Drawing.Image)(resources.GetObject("form_minimize_button.Image")));
+            this.form_minimize_button.ImageActive = null;
+            this.form_minimize_button.Location = new System.Drawing.Point(787, 0);
+            this.form_minimize_button.Name = "form_minimize_button";
+            this.form_minimize_button.Size = new System.Drawing.Size(30, 45);
+            this.form_minimize_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.form_minimize_button.TabIndex = 109;
+            this.form_minimize_button.TabStop = false;
+            this.form_minimize_button.Zoom = 20;
+            this.form_minimize_button.Click += new System.EventHandler(this.form_minimize_button_Click);
+            // 
+            // form_close_button
+            // 
+            this.form_close_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.form_close_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
+            this.form_close_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.form_close_button.Image = ((System.Drawing.Image)(resources.GetObject("form_close_button.Image")));
+            this.form_close_button.ImageActive = null;
+            this.form_close_button.Location = new System.Drawing.Point(817, 0);
+            this.form_close_button.Margin = new System.Windows.Forms.Padding(50);
+            this.form_close_button.Name = "form_close_button";
+            this.form_close_button.Padding = new System.Windows.Forms.Padding(50);
+            this.form_close_button.Size = new System.Drawing.Size(30, 45);
+            this.form_close_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.form_close_button.TabIndex = 39;
+            this.form_close_button.TabStop = false;
+            this.form_close_button.Zoom = 20;
+            this.form_close_button.Click += new System.EventHandler(this.form_close_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.groupboxanimation.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // form_title
+            // 
+            this.form_title.AutoSize = true;
+            this.form_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.groupboxanimation.SetDecoration(this.form_title, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.form_title, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.form_title, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.form_title, BunifuAnimatorNS.DecorationType.None);
+            this.form_title.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.form_title.ForeColor = System.Drawing.Color.White;
+            this.form_title.Location = new System.Drawing.Point(51, 13);
+            this.form_title.Name = "form_title";
+            this.form_title.Size = new System.Drawing.Size(352, 21);
+            this.form_title.TabIndex = 38;
+            this.form_title.Text = "Spotify - Arduino Project v1.1 - Nader11ndeu";
             // 
             // sidemenu
             // 
             this.sidemenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidemenu.Controls.Add(this.btnMnu);
             this.sidemenu.Controls.Add(this.logo);
-            this.sidemenu.Controls.Add(this.tabButton2);
-            this.sidemenu.Controls.Add(this.tabButton3);
-            this.sidemenu.Controls.Add(this.tabButton1);
+            this.sidemenu.Controls.Add(this.Access_tab);
+            this.sidemenu.Controls.Add(this.Control_tab);
+            this.sidemenu.Controls.Add(this.auth_tab);
             this.groupboxanimation1.SetDecoration(this.sidemenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.sidemenu, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.sidemenu, BunifuAnimatorNS.DecorationType.None);
@@ -212,7 +261,7 @@
             this.sidemenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidemenu.Location = new System.Drawing.Point(0, 45);
             this.sidemenu.Name = "sidemenu";
-            this.sidemenu.Size = new System.Drawing.Size(55, 1016);
+            this.sidemenu.Size = new System.Drawing.Size(55, 785);
             this.sidemenu.TabIndex = 36;
             // 
             // btnMnu
@@ -250,222 +299,146 @@
             this.logo.TabStop = false;
             this.logo.Visible = false;
             // 
-            // tabButton2
+            // Access_tab
             // 
-            this.tabButton2.Activecolor = System.Drawing.Color.Green;
-            this.tabButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabButton2.BorderRadius = 0;
-            this.tabButton2.ButtonText = "      Spotify Access Token";
-            this.tabButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation.SetDecoration(this.tabButton2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tabButton2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.tabButton2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.tabButton2, BunifuAnimatorNS.DecorationType.None);
-            this.tabButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.tabButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.tabButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("tabButton2.Iconimage")));
-            this.tabButton2.Iconimage_right = null;
-            this.tabButton2.Iconimage_right_Selected = null;
-            this.tabButton2.Iconimage_Selected = null;
-            this.tabButton2.IconMarginLeft = 10;
-            this.tabButton2.IconMarginRight = 0;
-            this.tabButton2.IconRightVisible = true;
-            this.tabButton2.IconRightZoom = 0D;
-            this.tabButton2.IconVisible = true;
-            this.tabButton2.IconZoom = 75D;
-            this.tabButton2.IsTab = true;
-            this.tabButton2.Location = new System.Drawing.Point(0, 177);
-            this.tabButton2.Name = "tabButton2";
-            this.tabButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.tabButton2.selected = false;
-            this.tabButton2.Size = new System.Drawing.Size(297, 48);
-            this.tabButton2.TabIndex = 40;
-            this.tabButton2.Text = "      Spotify Access Token";
-            this.tabButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tabButton2.Textcolor = System.Drawing.Color.Silver;
-            this.tabButton2.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabButton2.Click += new System.EventHandler(this.tabButton2_Click);
+            this.Access_tab.Activecolor = System.Drawing.Color.Green;
+            this.Access_tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Access_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Access_tab.BorderRadius = 0;
+            this.Access_tab.ButtonText = "      Spotify Access Token";
+            this.Access_tab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation.SetDecoration(this.Access_tab, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.Access_tab, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.Access_tab, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.Access_tab, BunifuAnimatorNS.DecorationType.None);
+            this.Access_tab.DisabledColor = System.Drawing.Color.Gray;
+            this.Access_tab.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Access_tab.Iconcolor = System.Drawing.Color.Transparent;
+            this.Access_tab.Iconimage = ((System.Drawing.Image)(resources.GetObject("Access_tab.Iconimage")));
+            this.Access_tab.Iconimage_right = null;
+            this.Access_tab.Iconimage_right_Selected = null;
+            this.Access_tab.Iconimage_Selected = null;
+            this.Access_tab.IconMarginLeft = 10;
+            this.Access_tab.IconMarginRight = 0;
+            this.Access_tab.IconRightVisible = true;
+            this.Access_tab.IconRightZoom = 0D;
+            this.Access_tab.IconVisible = true;
+            this.Access_tab.IconZoom = 75D;
+            this.Access_tab.IsTab = true;
+            this.Access_tab.Location = new System.Drawing.Point(0, 177);
+            this.Access_tab.Name = "Access_tab";
+            this.Access_tab.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Access_tab.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Access_tab.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.Access_tab.selected = false;
+            this.Access_tab.Size = new System.Drawing.Size(297, 48);
+            this.Access_tab.TabIndex = 40;
+            this.Access_tab.Text = "      Spotify Access Token";
+            this.Access_tab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Access_tab.Textcolor = System.Drawing.Color.Silver;
+            this.Access_tab.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Access_tab.Click += new System.EventHandler(this.Access_tab_Click);
             // 
-            // tabButton3
+            // Control_tab
             // 
-            this.tabButton3.Activecolor = System.Drawing.Color.Green;
-            this.tabButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabButton3.BorderRadius = 0;
-            this.tabButton3.ButtonText = "      Spotify Control";
-            this.tabButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation.SetDecoration(this.tabButton3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tabButton3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.tabButton3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.tabButton3, BunifuAnimatorNS.DecorationType.None);
-            this.tabButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.tabButton3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.tabButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("tabButton3.Iconimage")));
-            this.tabButton3.Iconimage_right = null;
-            this.tabButton3.Iconimage_right_Selected = null;
-            this.tabButton3.Iconimage_Selected = null;
-            this.tabButton3.IconMarginLeft = 10;
-            this.tabButton3.IconMarginRight = 0;
-            this.tabButton3.IconRightVisible = true;
-            this.tabButton3.IconRightZoom = 0D;
-            this.tabButton3.IconVisible = true;
-            this.tabButton3.IconZoom = 75D;
-            this.tabButton3.IsTab = true;
-            this.tabButton3.Location = new System.Drawing.Point(0, 226);
-            this.tabButton3.Name = "tabButton3";
-            this.tabButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.tabButton3.selected = false;
-            this.tabButton3.Size = new System.Drawing.Size(297, 48);
-            this.tabButton3.TabIndex = 39;
-            this.tabButton3.Text = "      Spotify Control";
-            this.tabButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tabButton3.Textcolor = System.Drawing.Color.Silver;
-            this.tabButton3.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabButton3.Click += new System.EventHandler(this.tabButton3_Click);
+            this.Control_tab.Activecolor = System.Drawing.Color.Green;
+            this.Control_tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Control_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Control_tab.BorderRadius = 0;
+            this.Control_tab.ButtonText = "      Spotify Control";
+            this.Control_tab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation.SetDecoration(this.Control_tab, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.Control_tab, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.Control_tab, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.Control_tab, BunifuAnimatorNS.DecorationType.None);
+            this.Control_tab.DisabledColor = System.Drawing.Color.Gray;
+            this.Control_tab.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Control_tab.Iconcolor = System.Drawing.Color.Transparent;
+            this.Control_tab.Iconimage = ((System.Drawing.Image)(resources.GetObject("Control_tab.Iconimage")));
+            this.Control_tab.Iconimage_right = null;
+            this.Control_tab.Iconimage_right_Selected = null;
+            this.Control_tab.Iconimage_Selected = null;
+            this.Control_tab.IconMarginLeft = 10;
+            this.Control_tab.IconMarginRight = 0;
+            this.Control_tab.IconRightVisible = true;
+            this.Control_tab.IconRightZoom = 0D;
+            this.Control_tab.IconVisible = true;
+            this.Control_tab.IconZoom = 75D;
+            this.Control_tab.IsTab = true;
+            this.Control_tab.Location = new System.Drawing.Point(0, 226);
+            this.Control_tab.Name = "Control_tab";
+            this.Control_tab.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Control_tab.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Control_tab.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.Control_tab.selected = false;
+            this.Control_tab.Size = new System.Drawing.Size(297, 48);
+            this.Control_tab.TabIndex = 39;
+            this.Control_tab.Text = "      Spotify Control";
+            this.Control_tab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Control_tab.Textcolor = System.Drawing.Color.Silver;
+            this.Control_tab.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Control_tab.Click += new System.EventHandler(this.Control_tab_Click);
             // 
-            // tabButton1
+            // auth_tab
             // 
-            this.tabButton1.Activecolor = System.Drawing.Color.Green;
-            this.tabButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabButton1.BorderRadius = 0;
-            this.tabButton1.ButtonText = "      Client Authorization";
-            this.tabButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation.SetDecoration(this.tabButton1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tabButton1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.tabButton1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.tabButton1, BunifuAnimatorNS.DecorationType.None);
-            this.tabButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.tabButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.tabButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("tabButton1.Iconimage")));
-            this.tabButton1.Iconimage_right = null;
-            this.tabButton1.Iconimage_right_Selected = null;
-            this.tabButton1.Iconimage_Selected = null;
-            this.tabButton1.IconMarginLeft = 10;
-            this.tabButton1.IconMarginRight = 0;
-            this.tabButton1.IconRightVisible = true;
-            this.tabButton1.IconRightZoom = 0D;
-            this.tabButton1.IconVisible = true;
-            this.tabButton1.IconZoom = 75D;
-            this.tabButton1.IsTab = true;
-            this.tabButton1.Location = new System.Drawing.Point(0, 128);
-            this.tabButton1.Name = "tabButton1";
-            this.tabButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.tabButton1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.tabButton1.selected = false;
-            this.tabButton1.Size = new System.Drawing.Size(264, 48);
-            this.tabButton1.TabIndex = 38;
-            this.tabButton1.Text = "      Client Authorization";
-            this.tabButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tabButton1.Textcolor = System.Drawing.Color.Silver;
-            this.tabButton1.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabButton1.Click += new System.EventHandler(this.tabButton1_Click);
+            this.auth_tab.Activecolor = System.Drawing.Color.Green;
+            this.auth_tab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.auth_tab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.auth_tab.BorderRadius = 0;
+            this.auth_tab.ButtonText = "      Client Authorization";
+            this.auth_tab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation.SetDecoration(this.auth_tab, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.auth_tab, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.auth_tab, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.auth_tab, BunifuAnimatorNS.DecorationType.None);
+            this.auth_tab.DisabledColor = System.Drawing.Color.Gray;
+            this.auth_tab.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.auth_tab.Iconcolor = System.Drawing.Color.Transparent;
+            this.auth_tab.Iconimage = ((System.Drawing.Image)(resources.GetObject("auth_tab.Iconimage")));
+            this.auth_tab.Iconimage_right = null;
+            this.auth_tab.Iconimage_right_Selected = null;
+            this.auth_tab.Iconimage_Selected = null;
+            this.auth_tab.IconMarginLeft = 10;
+            this.auth_tab.IconMarginRight = 0;
+            this.auth_tab.IconRightVisible = true;
+            this.auth_tab.IconRightZoom = 0D;
+            this.auth_tab.IconVisible = true;
+            this.auth_tab.IconZoom = 75D;
+            this.auth_tab.IsTab = true;
+            this.auth_tab.Location = new System.Drawing.Point(0, 128);
+            this.auth_tab.Name = "auth_tab";
+            this.auth_tab.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.auth_tab.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.auth_tab.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.auth_tab.selected = false;
+            this.auth_tab.Size = new System.Drawing.Size(264, 48);
+            this.auth_tab.TabIndex = 38;
+            this.auth_tab.Text = "      Client Authorization";
+            this.auth_tab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.auth_tab.Textcolor = System.Drawing.Color.Silver;
+            this.auth_tab.TextFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.auth_tab.Click += new System.EventHandler(this.auth_tab_Click);
             // 
-            // bunifuDragControl2
+            // bunifuFormFadeTransition1
             // 
-            this.bunifuDragControl2.Fixed = true;
-            this.bunifuDragControl2.Horizontal = true;
-            this.bunifuDragControl2.TargetControl = this.header;
-            this.bunifuDragControl2.Vertical = true;
+            this.bunifuFormFadeTransition1.Delay = 1;
             // 
-            // header
+            // bunifuSeparator1
             // 
-            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.header.Controls.Add(this.form_minimize_button);
-            this.header.Controls.Add(this.form_close_button);
-            this.header.Controls.Add(this.pictureBox1);
-            this.header.Controls.Add(this.bunifuCustomLabel1);
-            this.groupboxanimation1.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.header, BunifuAnimatorNS.DecorationType.None);
-            this.header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header.Location = new System.Drawing.Point(0, 0);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(2027, 45);
-            this.header.TabIndex = 37;
-            this.header.Paint += new System.Windows.Forms.PaintEventHandler(this.header_Paint);
-            // 
-            // form_minimize_button
-            // 
-            this.form_minimize_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.form_minimize_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.form_minimize_button, BunifuAnimatorNS.DecorationType.None);
-            this.form_minimize_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.form_minimize_button.Image = ((System.Drawing.Image)(resources.GetObject("form_minimize_button.Image")));
-            this.form_minimize_button.ImageActive = null;
-            this.form_minimize_button.Location = new System.Drawing.Point(1967, 0);
-            this.form_minimize_button.Name = "form_minimize_button";
-            this.form_minimize_button.Size = new System.Drawing.Size(30, 45);
-            this.form_minimize_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.form_minimize_button.TabIndex = 109;
-            this.form_minimize_button.TabStop = false;
-            this.form_minimize_button.Zoom = 20;
-            this.form_minimize_button.Click += new System.EventHandler(this.form_minimize_button_Click);
-            // 
-            // form_close_button
-            // 
-            this.form_close_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.form_close_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.form_close_button, BunifuAnimatorNS.DecorationType.None);
-            this.form_close_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.form_close_button.Image = ((System.Drawing.Image)(resources.GetObject("form_close_button.Image")));
-            this.form_close_button.ImageActive = null;
-            this.form_close_button.Location = new System.Drawing.Point(1997, 0);
-            this.form_close_button.Margin = new System.Windows.Forms.Padding(50);
-            this.form_close_button.Name = "form_close_button";
-            this.form_close_button.Padding = new System.Windows.Forms.Padding(50);
-            this.form_close_button.Size = new System.Drawing.Size(30, 45);
-            this.form_close_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.form_close_button.TabIndex = 39;
-            this.form_close_button.TabStop = false;
-            this.form_close_button.Zoom = 20;
-            this.form_close_button.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.groupboxanimation.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.groupboxanimation.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(51, 13);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(352, 21);
-            this.bunifuCustomLabel1.TabIndex = 38;
-            this.bunifuCustomLabel1.Text = "Spotify - Arduino Project v1.0 - Nader11ndeu";
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.groupboxanimation1.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.bunifuSeparator1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(501, 956);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(852, 46);
+            this.bunifuSeparator1.TabIndex = 29;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
             // 
             // PanelAnimator
             // 
@@ -492,19 +465,11 @@
             // 
             this.gradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.gradientPanel1.Controls.Add(this.label38);
-            this.gradientPanel1.Controls.Add(this.label36);
-            this.gradientPanel1.Controls.Add(this.label34);
-            this.gradientPanel1.Controls.Add(this.devices_id);
-            this.gradientPanel1.Controls.Add(this.listBox6);
-            this.gradientPanel1.Controls.Add(this.label32);
-            this.gradientPanel1.Controls.Add(this.listBox5);
-            this.gradientPanel1.Controls.Add(this.bunifuCards3);
+            this.gradientPanel1.Controls.Add(this.accesspo1);
+            this.gradientPanel1.Controls.Add(this.authnew1);
+            this.gradientPanel1.Controls.Add(this.groupBox1);
+            this.gradientPanel1.Controls.Add(this.control_groupbox);
             this.gradientPanel1.Controls.Add(this.webBrowser1);
-            this.gradientPanel1.Controls.Add(this.bunifuCards1);
-            this.gradientPanel1.Controls.Add(this.bunifuCards2);
-            this.gradientPanel1.Controls.Add(this.listBox3);
-            this.gradientPanel1.Controls.Add(this.label25);
             this.groupboxanimation1.SetDecoration(this.gradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.gradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimator.SetDecoration(this.gradientPanel1, BunifuAnimatorNS.DecorationType.None);
@@ -512,25 +477,51 @@
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.Location = new System.Drawing.Point(55, 45);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1972, 1016);
+            this.gradientPanel1.Size = new System.Drawing.Size(792, 785);
             this.gradientPanel1.TabIndex = 34;
-            this.gradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 
-            // label38
+            // accesspo1
             // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.groupboxanimation.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label38.ForeColor = System.Drawing.Color.Silver;
-            this.label38.Location = new System.Drawing.Point(1749, 159);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(58, 17);
-            this.label38.TabIndex = 108;
-            this.label38.Text = "Playing:";
+            this.groupboxanimation.SetDecoration(this.accesspo1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.accesspo1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.accesspo1, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.accesspo1, BunifuAnimatorNS.DecorationType.None);
+            this.accesspo1.Location = new System.Drawing.Point(929, 6);
+            this.accesspo1.Name = "accesspo1";
+            this.accesspo1.Size = new System.Drawing.Size(10, 10);
+            this.accesspo1.TabIndex = 111;
+            // 
+            // authnew1
+            // 
+            this.groupboxanimation.SetDecoration(this.authnew1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.authnew1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.authnew1, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.authnew1, BunifuAnimatorNS.DecorationType.None);
+            this.authnew1.Location = new System.Drawing.Point(891, 6);
+            this.authnew1.Name = "authnew1";
+            this.authnew1.Size = new System.Drawing.Size(10, 10);
+            this.authnew1.TabIndex = 110;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.devices_id);
+            this.groupBox1.Controls.Add(this.label38);
+            this.groupBox1.Controls.Add(this.featuredlist_name);
+            this.groupBox1.Controls.Add(this.label34);
+            this.groupBox1.Controls.Add(this.featuredlist_uri);
+            this.groupBox1.Controls.Add(this.volume_str);
+            this.groupBox1.Controls.Add(this.uri_list);
+            this.groupboxanimation1.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupBox1.Location = new System.Drawing.Point(964, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(10, 17);
+            this.groupBox1.TabIndex = 109;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // label36
             // 
@@ -542,27 +533,11 @@
             this.groupboxanimation1.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
             this.label36.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.label36.ForeColor = System.Drawing.Color.Silver;
-            this.label36.Location = new System.Drawing.Point(1774, 354);
+            this.label36.Location = new System.Drawing.Point(-3, 17);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(58, 17);
             this.label36.TabIndex = 107;
             this.label36.Text = "Playing:";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.groupboxanimation.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label34.ForeColor = System.Drawing.Color.Silver;
-            this.label34.Location = new System.Drawing.Point(1749, 112);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(58, 17);
-            this.label34.TabIndex = 106;
-            this.label34.Text = "Playing:";
             // 
             // devices_id
             // 
@@ -576,136 +551,275 @@
             this.devices_id.ForeColor = System.Drawing.Color.Silver;
             this.devices_id.FormattingEnabled = true;
             this.devices_id.ItemHeight = 17;
-            this.devices_id.Location = new System.Drawing.Point(1574, 32);
+            this.devices_id.Location = new System.Drawing.Point(11, 170);
             this.devices_id.Name = "devices_id";
             this.devices_id.Size = new System.Drawing.Size(223, 36);
             this.devices_id.TabIndex = 105;
             // 
-            // listBox6
+            // label38
             // 
-            this.listBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox6, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox6, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox6, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox6, BunifuAnimatorNS.DecorationType.None);
-            this.listBox6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox6.ForeColor = System.Drawing.Color.Silver;
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 17;
-            this.listBox6.Location = new System.Drawing.Point(1704, 716);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(263, 155);
-            this.listBox6.TabIndex = 92;
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.groupboxanimation.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label38.ForeColor = System.Drawing.Color.Silver;
+            this.label38.Location = new System.Drawing.Point(95, 256);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(58, 17);
+            this.label38.TabIndex = 108;
+            this.label38.Text = "Playing:";
             // 
-            // label32
+            // featuredlist_name
             // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.groupboxanimation.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.label32.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label32.ForeColor = System.Drawing.Color.Silver;
-            this.label32.Location = new System.Drawing.Point(1790, 662);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(58, 17);
-            this.label32.TabIndex = 91;
-            this.label32.Text = "Playing:";
+            this.featuredlist_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.featuredlist_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logoAnimator.SetDecoration(this.featuredlist_name, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.featuredlist_name, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.featuredlist_name, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.featuredlist_name, BunifuAnimatorNS.DecorationType.None);
+            this.featuredlist_name.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.featuredlist_name.ForeColor = System.Drawing.Color.Silver;
+            this.featuredlist_name.FormattingEnabled = true;
+            this.featuredlist_name.ItemHeight = 17;
+            this.featuredlist_name.Location = new System.Drawing.Point(44, 25);
+            this.featuredlist_name.Name = "featuredlist_name";
+            this.featuredlist_name.Size = new System.Drawing.Size(156, 155);
+            this.featuredlist_name.TabIndex = 90;
             // 
-            // listBox5
+            // label34
             // 
-            this.listBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox5, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox5, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox5, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox5, BunifuAnimatorNS.DecorationType.None);
-            this.listBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox5.ForeColor = System.Drawing.Color.Silver;
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 17;
-            this.listBox5.Location = new System.Drawing.Point(1777, 456);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(156, 155);
-            this.listBox5.TabIndex = 90;
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.groupboxanimation.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.label34.ForeColor = System.Drawing.Color.Silver;
+            this.label34.Location = new System.Drawing.Point(95, 209);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(58, 17);
+            this.label34.TabIndex = 106;
+            this.label34.Text = "Playing:";
             // 
-            // bunifuCards3
+            // featuredlist_uri
             // 
-            this.bunifuCards3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuCards3.BorderRadius = 5;
-            this.bunifuCards3.BottomSahddow = true;
-            this.bunifuCards3.color = System.Drawing.Color.Lime;
-            this.bunifuCards3.Controls.Add(this.retry_port_button);
-            this.bunifuCards3.Controls.Add(this.featured_list_combobox);
-            this.bunifuCards3.Controls.Add(this.label37);
-            this.bunifuCards3.Controls.Add(this.comboBox2);
-            this.bunifuCards3.Controls.Add(this.market_list_combobox);
-            this.bunifuCards3.Controls.Add(this.label35);
-            this.bunifuCards3.Controls.Add(this.playlist_name_textbox);
-            this.bunifuCards3.Controls.Add(this.label33);
-            this.bunifuCards3.Controls.Add(this.playback_type_textbox);
-            this.bunifuCards3.Controls.Add(this.albumname_textbox);
-            this.bunifuCards3.Controls.Add(this.artistsname_textbox);
-            this.bunifuCards3.Controls.Add(this.playingsong_textbox);
-            this.bunifuCards3.Controls.Add(this.album_image_textbox);
-            this.bunifuCards3.Controls.Add(this.album_id_textbox);
-            this.bunifuCards3.Controls.Add(this.album_uri_textbox);
-            this.bunifuCards3.Controls.Add(this.track_uri_textbox);
-            this.bunifuCards3.Controls.Add(this.play_featured_song_button);
-            this.bunifuCards3.Controls.Add(this.play_fav_songs);
-            this.bunifuCards3.Controls.Add(this.delete_saved_track_button);
-            this.bunifuCards3.Controls.Add(this.status_save);
-            this.bunifuCards3.Controls.Add(this.save_track_button);
-            this.bunifuCards3.Controls.Add(this.connected_devices);
-            this.bunifuCards3.Controls.Add(this.label31);
-            this.bunifuCards3.Controls.Add(this.label30);
-            this.bunifuCards3.Controls.Add(this.listBox4);
-            this.bunifuCards3.Controls.Add(this.volume_trackbar);
-            this.bunifuCards3.Controls.Add(this.port_connect);
-            this.bunifuCards3.Controls.Add(this.listBox2);
-            this.bunifuCards3.Controls.Add(this.label27);
-            this.bunifuCards3.Controls.Add(this.label26);
-            this.bunifuCards3.Controls.Add(this.next_song_button);
-            this.bunifuCards3.Controls.Add(this.previous_song_button);
-            this.bunifuCards3.Controls.Add(this.play_song_button);
-            this.bunifuCards3.Controls.Add(this.label29);
-            this.bunifuCards3.Controls.Add(this.label28);
-            this.bunifuCards3.Controls.Add(this.slider1);
-            this.bunifuCards3.Controls.Add(this.pause_song_button);
-            this.bunifuCards3.Controls.Add(this.label24);
-            this.bunifuCards3.Controls.Add(this.label23);
-            this.bunifuCards3.Controls.Add(this.label22);
-            this.bunifuCards3.Controls.Add(this.pictureBox2);
-            this.bunifuCards3.Controls.Add(this.label21);
-            this.bunifuCards3.Controls.Add(this.label13);
-            this.bunifuCards3.Controls.Add(this.label20);
-            this.bunifuCards3.Controls.Add(this.device_status_text);
-            this.bunifuCards3.Controls.Add(this.label14);
-            this.bunifuCards3.Controls.Add(this.label17);
-            this.bunifuCards3.Controls.Add(this.device_type_textbox);
-            this.bunifuCards3.Controls.Add(this.active_device_textbox);
-            this.bunifuCards3.Controls.Add(this.label16);
-            this.bunifuCards3.Controls.Add(this.label19);
-            this.bunifuCards3.Controls.Add(this.label18);
-            this.bunifuCards3.Controls.Add(this.label15);
-            this.bunifuCards3.Controls.Add(this.isactive_textbox);
-            this.bunifuCards3.Controls.Add(this.connect_api);
-            this.bunifuCards3.Controls.Add(this.bunifuSeparator2);
-            this.bunifuCards3.Controls.Add(this.playlist_uri_textbox);
-            this.groupboxanimation1.SetDecoration(this.bunifuCards3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuCards3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCards3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.bunifuCards3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCards3.LeftSahddow = false;
-            this.bunifuCards3.Location = new System.Drawing.Point(786, 81);
-            this.bunifuCards3.Name = "bunifuCards3";
-            this.bunifuCards3.RightSahddow = true;
-            this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(892, 823);
-            this.bunifuCards3.TabIndex = 57;
-            this.bunifuCards3.Visible = false;
+            this.featuredlist_uri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.featuredlist_uri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logoAnimator.SetDecoration(this.featuredlist_uri, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.featuredlist_uri, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.featuredlist_uri, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.featuredlist_uri, BunifuAnimatorNS.DecorationType.None);
+            this.featuredlist_uri.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.featuredlist_uri.ForeColor = System.Drawing.Color.Silver;
+            this.featuredlist_uri.FormattingEnabled = true;
+            this.featuredlist_uri.ItemHeight = 17;
+            this.featuredlist_uri.Location = new System.Drawing.Point(-29, 285);
+            this.featuredlist_uri.Name = "featuredlist_uri";
+            this.featuredlist_uri.Size = new System.Drawing.Size(263, 155);
+            this.featuredlist_uri.TabIndex = 92;
+            // 
+            // volume_str
+            // 
+            this.volume_str.AutoSize = true;
+            this.groupboxanimation.SetDecoration(this.volume_str, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.volume_str, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.volume_str, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.volume_str, BunifuAnimatorNS.DecorationType.None);
+            this.volume_str.Location = new System.Drawing.Point(58, 427);
+            this.volume_str.Name = "volume_str";
+            this.volume_str.Size = new System.Drawing.Size(41, 13);
+            this.volume_str.TabIndex = 99;
+            this.volume_str.Text = "label25";
+            // 
+            // uri_list
+            // 
+            this.uri_list.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.uri_list.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logoAnimator.SetDecoration(this.uri_list, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.uri_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.uri_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.uri_list, BunifuAnimatorNS.DecorationType.None);
+            this.uri_list.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.uri_list.ForeColor = System.Drawing.Color.Silver;
+            this.uri_list.FormattingEnabled = true;
+            this.uri_list.ItemHeight = 17;
+            this.uri_list.Location = new System.Drawing.Point(50, 364);
+            this.uri_list.Name = "uri_list";
+            this.uri_list.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.uri_list.Size = new System.Drawing.Size(21, 36);
+            this.uri_list.TabIndex = 88;
+            // 
+            // control_groupbox
+            // 
+            this.control_groupbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.control_groupbox.BorderRadius = 5;
+            this.control_groupbox.BottomSahddow = true;
+            this.control_groupbox.color = System.Drawing.Color.Lime;
+            this.control_groupbox.Controls.Add(this.next_song_button);
+            this.control_groupbox.Controls.Add(this.previous_song_button);
+            this.control_groupbox.Controls.Add(this.play_song_button);
+            this.control_groupbox.Controls.Add(this.pause_song_button);
+            this.control_groupbox.Controls.Add(this.token_timestr);
+            this.control_groupbox.Controls.Add(this.retry_port_button);
+            this.control_groupbox.Controls.Add(this.featured_list_combobox);
+            this.control_groupbox.Controls.Add(this.label37);
+            this.control_groupbox.Controls.Add(this.port_combo);
+            this.control_groupbox.Controls.Add(this.market_list_combobox);
+            this.control_groupbox.Controls.Add(this.label35);
+            this.control_groupbox.Controls.Add(this.playlist_name_textbox);
+            this.control_groupbox.Controls.Add(this.label33);
+            this.control_groupbox.Controls.Add(this.playback_type_textbox);
+            this.control_groupbox.Controls.Add(this.albumname_textbox);
+            this.control_groupbox.Controls.Add(this.artistsname_textbox);
+            this.control_groupbox.Controls.Add(this.playingsong_textbox);
+            this.control_groupbox.Controls.Add(this.album_image_textbox);
+            this.control_groupbox.Controls.Add(this.album_id_textbox);
+            this.control_groupbox.Controls.Add(this.album_uri_textbox);
+            this.control_groupbox.Controls.Add(this.track_uri_textbox);
+            this.control_groupbox.Controls.Add(this.play_featured_song_button);
+            this.control_groupbox.Controls.Add(this.play_fav_songs);
+            this.control_groupbox.Controls.Add(this.delete_saved_track_button);
+            this.control_groupbox.Controls.Add(this.status_save);
+            this.control_groupbox.Controls.Add(this.save_track_button);
+            this.control_groupbox.Controls.Add(this.connected_devices);
+            this.control_groupbox.Controls.Add(this.label31);
+            this.control_groupbox.Controls.Add(this.label30);
+            this.control_groupbox.Controls.Add(this.fav_name_list);
+            this.control_groupbox.Controls.Add(this.volume_trackbar);
+            this.control_groupbox.Controls.Add(this.port_connect);
+            this.control_groupbox.Controls.Add(this.name_list);
+            this.control_groupbox.Controls.Add(this.label27);
+            this.control_groupbox.Controls.Add(this.label26);
+            this.control_groupbox.Controls.Add(this.duration_current);
+            this.control_groupbox.Controls.Add(this.duration_max);
+            this.control_groupbox.Controls.Add(this.duration_slider);
+            this.control_groupbox.Controls.Add(this.label24);
+            this.control_groupbox.Controls.Add(this.label23);
+            this.control_groupbox.Controls.Add(this.label22);
+            this.control_groupbox.Controls.Add(this.album_picturebox);
+            this.control_groupbox.Controls.Add(this.label21);
+            this.control_groupbox.Controls.Add(this.label13);
+            this.control_groupbox.Controls.Add(this.label20);
+            this.control_groupbox.Controls.Add(this.device_status_text);
+            this.control_groupbox.Controls.Add(this.label14);
+            this.control_groupbox.Controls.Add(this.label17);
+            this.control_groupbox.Controls.Add(this.device_type_textbox);
+            this.control_groupbox.Controls.Add(this.active_device_textbox);
+            this.control_groupbox.Controls.Add(this.label16);
+            this.control_groupbox.Controls.Add(this.label19);
+            this.control_groupbox.Controls.Add(this.label18);
+            this.control_groupbox.Controls.Add(this.label15);
+            this.control_groupbox.Controls.Add(this.isactive_textbox);
+            this.control_groupbox.Controls.Add(this.connect_api);
+            this.control_groupbox.Controls.Add(this.bunifuSeparator2);
+            this.control_groupbox.Controls.Add(this.playlist_uri_textbox);
+            this.groupboxanimation1.SetDecoration(this.control_groupbox, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.control_groupbox, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.control_groupbox, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.control_groupbox, BunifuAnimatorNS.DecorationType.None);
+            this.control_groupbox.LeftSahddow = false;
+            this.control_groupbox.Location = new System.Drawing.Point(3, 6);
+            this.control_groupbox.Name = "control_groupbox";
+            this.control_groupbox.RightSahddow = true;
+            this.control_groupbox.ShadowDepth = 20;
+            this.control_groupbox.Size = new System.Drawing.Size(775, 768);
+            this.control_groupbox.TabIndex = 57;
+            this.control_groupbox.Visible = false;
+            // 
+            // next_song_button
+            // 
+            this.next_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.next_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.next_song_button.Image = ((System.Drawing.Image)(resources.GetObject("next_song_button.Image")));
+            this.next_song_button.ImageActive = null;
+            this.next_song_button.Location = new System.Drawing.Point(630, 462);
+            this.next_song_button.Name = "next_song_button";
+            this.next_song_button.Size = new System.Drawing.Size(39, 40);
+            this.next_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.next_song_button.TabIndex = 126;
+            this.next_song_button.TabStop = false;
+            this.next_song_button.Zoom = 10;
+            this.next_song_button.Click += new System.EventHandler(this.next_song_button_Click);
+            // 
+            // previous_song_button
+            // 
+            this.previous_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.previous_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.previous_song_button.Image = ((System.Drawing.Image)(resources.GetObject("previous_song_button.Image")));
+            this.previous_song_button.ImageActive = null;
+            this.previous_song_button.Location = new System.Drawing.Point(471, 462);
+            this.previous_song_button.Name = "previous_song_button";
+            this.previous_song_button.Size = new System.Drawing.Size(39, 40);
+            this.previous_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.previous_song_button.TabIndex = 125;
+            this.previous_song_button.TabStop = false;
+            this.previous_song_button.Zoom = 10;
+            this.previous_song_button.Click += new System.EventHandler(this.previous_song_button_Click);
+            // 
+            // play_song_button
+            // 
+            this.play_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.play_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.play_song_button.Image = ((System.Drawing.Image)(resources.GetObject("play_song_button.Image")));
+            this.play_song_button.ImageActive = null;
+            this.play_song_button.Location = new System.Drawing.Point(551, 462);
+            this.play_song_button.Name = "play_song_button";
+            this.play_song_button.Size = new System.Drawing.Size(39, 40);
+            this.play_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.play_song_button.TabIndex = 124;
+            this.play_song_button.TabStop = false;
+            this.play_song_button.Visible = false;
+            this.play_song_button.Zoom = 15;
+            this.play_song_button.Click += new System.EventHandler(this.play_song_button_Click);
+            // 
+            // pause_song_button
+            // 
+            this.pause_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.pause_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupboxanimation1.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
+            this.pause_song_button.Image = ((System.Drawing.Image)(resources.GetObject("pause_song_button.Image")));
+            this.pause_song_button.ImageActive = null;
+            this.pause_song_button.Location = new System.Drawing.Point(551, 462);
+            this.pause_song_button.Name = "pause_song_button";
+            this.pause_song_button.Size = new System.Drawing.Size(39, 40);
+            this.pause_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pause_song_button.TabIndex = 123;
+            this.pause_song_button.TabStop = false;
+            this.pause_song_button.Zoom = 15;
+            this.pause_song_button.Click += new System.EventHandler(this.pause_song_button_Click);
+            // 
+            // token_timestr
+            // 
+            this.token_timestr.AutoSize = true;
+            this.groupboxanimation.SetDecoration(this.token_timestr, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.token_timestr, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.token_timestr, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.token_timestr, BunifuAnimatorNS.DecorationType.None);
+            this.token_timestr.ForeColor = System.Drawing.Color.White;
+            this.token_timestr.Location = new System.Drawing.Point(9, 16);
+            this.token_timestr.Name = "token_timestr";
+            this.token_timestr.Size = new System.Drawing.Size(41, 13);
+            this.token_timestr.TabIndex = 122;
+            this.token_timestr.Text = "label39";
             // 
             // retry_port_button
             // 
@@ -766,26 +880,26 @@
             this.label37.TabIndex = 119;
             this.label37.Text = "Featured_list:";
             // 
-            // comboBox2
+            // port_combo
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.comboBox2.BorderRadius = 3;
-            this.comboBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.groupboxanimation.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox2.DisabledColor = System.Drawing.Color.Gray;
-            this.comboBox2.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox2.Items = new string[0];
-            this.comboBox2.Location = new System.Drawing.Point(32, 463);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.comboBox2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBox2.selectedIndex = -1;
-            this.comboBox2.Size = new System.Drawing.Size(166, 25);
-            this.comboBox2.TabIndex = 118;
+            this.port_combo.BackColor = System.Drawing.Color.Transparent;
+            this.port_combo.BorderRadius = 3;
+            this.port_combo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.groupboxanimation.SetDecoration(this.port_combo, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.port_combo, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.port_combo, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.port_combo, BunifuAnimatorNS.DecorationType.None);
+            this.port_combo.DisabledColor = System.Drawing.Color.Gray;
+            this.port_combo.ForeColor = System.Drawing.Color.Silver;
+            this.port_combo.Items = new string[0];
+            this.port_combo.Location = new System.Drawing.Point(32, 463);
+            this.port_combo.Margin = new System.Windows.Forms.Padding(4);
+            this.port_combo.Name = "port_combo";
+            this.port_combo.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.port_combo.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.port_combo.selectedIndex = -1;
+            this.port_combo.Size = new System.Drawing.Size(166, 25);
+            this.port_combo.TabIndex = 118;
             // 
             // market_list_combobox
             // 
@@ -1288,22 +1402,22 @@
             this.label30.TabIndex = 101;
             this.label30.Text = "Current_List";
             // 
-            // listBox4
+            // fav_name_list
             // 
-            this.listBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox4, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox4, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox4, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox4, BunifuAnimatorNS.DecorationType.None);
-            this.listBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox4.ForeColor = System.Drawing.Color.Silver;
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 17;
-            this.listBox4.Location = new System.Drawing.Point(487, 539);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(262, 206);
-            this.listBox4.TabIndex = 89;
+            this.fav_name_list.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.fav_name_list.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logoAnimator.SetDecoration(this.fav_name_list, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.fav_name_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.fav_name_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.fav_name_list, BunifuAnimatorNS.DecorationType.None);
+            this.fav_name_list.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.fav_name_list.ForeColor = System.Drawing.Color.Silver;
+            this.fav_name_list.FormattingEnabled = true;
+            this.fav_name_list.ItemHeight = 17;
+            this.fav_name_list.Location = new System.Drawing.Point(487, 539);
+            this.fav_name_list.Name = "fav_name_list";
+            this.fav_name_list.Size = new System.Drawing.Size(262, 206);
+            this.fav_name_list.TabIndex = 89;
             // 
             // volume_trackbar
             // 
@@ -1359,20 +1473,20 @@
             this.port_connect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.port_connect.Click += new System.EventHandler(this.port_connect_Click);
             // 
-            // listBox2
+            // name_list
             // 
-            this.listBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox2, BunifuAnimatorNS.DecorationType.None);
-            this.listBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.listBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox2.ForeColor = System.Drawing.Color.Silver;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 17;
-            this.listBox2.Items.AddRange(new object[] {
+            this.name_list.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.name_list.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logoAnimator.SetDecoration(this.name_list, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.name_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.name_list, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.name_list, BunifuAnimatorNS.DecorationType.None);
+            this.name_list.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.name_list.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.name_list.ForeColor = System.Drawing.Color.Silver;
+            this.name_list.FormattingEnabled = true;
+            this.name_list.ItemHeight = 17;
+            this.name_list.Items.AddRange(new object[] {
             "asdasdas",
             "",
             "asd",
@@ -1382,13 +1496,13 @@
             "gsd",
             "g",
             "asdsaD"});
-            this.listBox2.Location = new System.Drawing.Point(30, 539);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(262, 206);
-            this.listBox2.TabIndex = 87;
-            this.listBox2.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listBox2_DrawItem);
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
-            this.listBox2.DoubleClick += new System.EventHandler(this.listBox2_DoubleClick);
+            this.name_list.Location = new System.Drawing.Point(30, 539);
+            this.name_list.Name = "name_list";
+            this.name_list.Size = new System.Drawing.Size(262, 206);
+            this.name_list.TabIndex = 87;
+            this.name_list.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listBox2_DrawItem);
+            this.name_list.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.name_list.DoubleClick += new System.EventHandler(this.listBox2_DoubleClick);
             // 
             // label27
             // 
@@ -1422,130 +1536,53 @@
             this.label26.TabIndex = 82;
             this.label26.Text = "Playback Type:";
             // 
-            // next_song_button
+            // duration_current
             // 
-            this.next_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.next_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.next_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.next_song_button.Image = ((System.Drawing.Image)(resources.GetObject("next_song_button.Image")));
-            this.next_song_button.ImageActive = null;
-            this.next_song_button.Location = new System.Drawing.Point(630, 457);
-            this.next_song_button.Name = "next_song_button";
-            this.next_song_button.Size = new System.Drawing.Size(39, 40);
-            this.next_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.next_song_button.TabIndex = 77;
-            this.next_song_button.TabStop = false;
-            this.next_song_button.Zoom = 10;
-            this.next_song_button.Click += new System.EventHandler(this.next_song_button_Click);
+            this.duration_current.AutoSize = true;
+            this.groupboxanimation.SetDecoration(this.duration_current, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.duration_current, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.duration_current, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.duration_current, BunifuAnimatorNS.DecorationType.None);
+            this.duration_current.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.duration_current.ForeColor = System.Drawing.Color.Silver;
+            this.duration_current.Location = new System.Drawing.Point(377, 475);
+            this.duration_current.Name = "duration_current";
+            this.duration_current.Size = new System.Drawing.Size(40, 17);
+            this.duration_current.TabIndex = 74;
+            this.duration_current.Text = "00:00";
             // 
-            // previous_song_button
+            // duration_max
             // 
-            this.previous_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.previous_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.previous_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.previous_song_button.Image = ((System.Drawing.Image)(resources.GetObject("previous_song_button.Image")));
-            this.previous_song_button.ImageActive = null;
-            this.previous_song_button.Location = new System.Drawing.Point(471, 457);
-            this.previous_song_button.Name = "previous_song_button";
-            this.previous_song_button.Size = new System.Drawing.Size(39, 40);
-            this.previous_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.previous_song_button.TabIndex = 76;
-            this.previous_song_button.TabStop = false;
-            this.previous_song_button.Zoom = 10;
-            this.previous_song_button.Click += new System.EventHandler(this.previous_song_button_Click);
+            this.duration_max.AutoSize = true;
+            this.groupboxanimation.SetDecoration(this.duration_max, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.duration_max, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.duration_max, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.duration_max, BunifuAnimatorNS.DecorationType.None);
+            this.duration_max.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.duration_max.ForeColor = System.Drawing.Color.Silver;
+            this.duration_max.Location = new System.Drawing.Point(709, 475);
+            this.duration_max.Name = "duration_max";
+            this.duration_max.Size = new System.Drawing.Size(40, 17);
+            this.duration_max.TabIndex = 73;
+            this.duration_max.Text = "00:00";
             // 
-            // play_song_button
+            // duration_slider
             // 
-            this.play_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.play_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.play_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.play_song_button.Image = ((System.Drawing.Image)(resources.GetObject("play_song_button.Image")));
-            this.play_song_button.ImageActive = null;
-            this.play_song_button.Location = new System.Drawing.Point(551, 457);
-            this.play_song_button.Name = "play_song_button";
-            this.play_song_button.Size = new System.Drawing.Size(39, 40);
-            this.play_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.play_song_button.TabIndex = 75;
-            this.play_song_button.TabStop = false;
-            this.play_song_button.Visible = false;
-            this.play_song_button.Zoom = 15;
-            this.play_song_button.Click += new System.EventHandler(this.play_song_button_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label29.ForeColor = System.Drawing.Color.Silver;
-            this.label29.Location = new System.Drawing.Point(377, 475);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(40, 17);
-            this.label29.TabIndex = 74;
-            this.label29.Text = "00:00";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label28.ForeColor = System.Drawing.Color.Silver;
-            this.label28.Location = new System.Drawing.Point(709, 475);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(40, 17);
-            this.label28.TabIndex = 73;
-            this.label28.Text = "00:00";
-            // 
-            // slider1
-            // 
-            this.slider1.BackColor = System.Drawing.Color.Transparent;
-            this.slider1.BackgroudColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.slider1.BorderRadius = 0;
-            this.logoAnimator.SetDecoration(this.slider1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.slider1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.slider1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.slider1, BunifuAnimatorNS.DecorationType.None);
-            this.slider1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.slider1.Location = new System.Drawing.Point(380, 431);
-            this.slider1.MaximumValue = 100;
-            this.slider1.Name = "slider1";
-            this.slider1.Size = new System.Drawing.Size(369, 30);
-            this.slider1.TabIndex = 70;
-            this.slider1.Value = 0;
-            this.slider1.ValueChanged += new System.EventHandler(this.slider1_ValueChanged);
-            // 
-            // pause_song_button
-            // 
-            this.pause_song_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.pause_song_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation1.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.pause_song_button, BunifuAnimatorNS.DecorationType.None);
-            this.pause_song_button.Image = ((System.Drawing.Image)(resources.GetObject("pause_song_button.Image")));
-            this.pause_song_button.ImageActive = null;
-            this.pause_song_button.Location = new System.Drawing.Point(551, 457);
-            this.pause_song_button.Name = "pause_song_button";
-            this.pause_song_button.Size = new System.Drawing.Size(39, 40);
-            this.pause_song_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pause_song_button.TabIndex = 64;
-            this.pause_song_button.TabStop = false;
-            this.pause_song_button.Zoom = 15;
-            this.pause_song_button.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.duration_slider.BackColor = System.Drawing.Color.Transparent;
+            this.duration_slider.BackgroudColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.duration_slider.BorderRadius = 0;
+            this.logoAnimator.SetDecoration(this.duration_slider, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.duration_slider, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.duration_slider, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation.SetDecoration(this.duration_slider, BunifuAnimatorNS.DecorationType.None);
+            this.duration_slider.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.duration_slider.Location = new System.Drawing.Point(380, 431);
+            this.duration_slider.MaximumValue = 100;
+            this.duration_slider.Name = "duration_slider";
+            this.duration_slider.Size = new System.Drawing.Size(369, 30);
+            this.duration_slider.TabIndex = 70;
+            this.duration_slider.Value = 0;
+            this.duration_slider.ValueChanged += new System.EventHandler(this.slider1_ValueChanged);
             // 
             // label24
             // 
@@ -1595,17 +1632,17 @@
             this.label22.TabIndex = 58;
             this.label22.Text = "Playing:";
             // 
-            // pictureBox2
+            // album_picturebox
             // 
-            this.groupboxanimation.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Location = new System.Drawing.Point(409, 123);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox2.TabIndex = 56;
-            this.pictureBox2.TabStop = false;
+            this.groupboxanimation.SetDecoration(this.album_picturebox, BunifuAnimatorNS.DecorationType.None);
+            this.groupboxanimation1.SetDecoration(this.album_picturebox, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimator.SetDecoration(this.album_picturebox, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.album_picturebox, BunifuAnimatorNS.DecorationType.None);
+            this.album_picturebox.Location = new System.Drawing.Point(409, 123);
+            this.album_picturebox.Name = "album_picturebox";
+            this.album_picturebox.Size = new System.Drawing.Size(300, 300);
+            this.album_picturebox.TabIndex = 56;
+            this.album_picturebox.TabStop = false;
             // 
             // label21
             // 
@@ -1857,7 +1894,7 @@
             this.connect_api.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.connect_api.IdleForecolor = System.Drawing.Color.White;
             this.connect_api.IdleLineColor = System.Drawing.Color.Transparent;
-            this.connect_api.Location = new System.Drawing.Point(37, 76);
+            this.connect_api.Location = new System.Drawing.Point(36, 75);
             this.connect_api.Margin = new System.Windows.Forms.Padding(5);
             this.connect_api.Name = "connect_api";
             this.connect_api.Size = new System.Drawing.Size(166, 32);
@@ -1909,635 +1946,14 @@
             this.logoAnimator.SetDecoration(this.webBrowser1, BunifuAnimatorNS.DecorationType.None);
             this.groupboxanimation1.SetDecoration(this.webBrowser1, BunifuAnimatorNS.DecorationType.None);
             this.groupboxanimation.SetDecoration(this.webBrowser1, BunifuAnimatorNS.DecorationType.None);
-            this.webBrowser1.Location = new System.Drawing.Point(6, 435);
+            this.webBrowser1.Location = new System.Drawing.Point(8, 469);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(661, 390);
+            this.webBrowser1.Size = new System.Drawing.Size(639, 314);
             this.webBrowser1.TabIndex = 34;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
-            // 
-            // bunifuCards1
-            // 
-            this.bunifuCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuCards1.BorderRadius = 5;
-            this.bunifuCards1.BottomSahddow = true;
-            this.bunifuCards1.color = System.Drawing.Color.Lime;
-            this.bunifuCards1.Controls.Add(this.label6);
-            this.bunifuCards1.Controls.Add(this.comboBox1);
-            this.bunifuCards1.Controls.Add(this.label5);
-            this.bunifuCards1.Controls.Add(this.bunifuMetroTextbox1);
-            this.bunifuCards1.Controls.Add(this.label4);
-            this.bunifuCards1.Controls.Add(this.client_id_textbox);
-            this.bunifuCards1.Controls.Add(this.authorization_button);
-            this.bunifuCards1.Controls.Add(this.client_sr_textbox);
-            this.bunifuCards1.Controls.Add(this.label1);
-            this.bunifuCards1.Controls.Add(this.label2);
-            this.bunifuCards1.Controls.Add(this.listBox1);
-            this.bunifuCards1.Controls.Add(this.textBox3);
-            this.bunifuCards1.Controls.Add(this.label3);
-            this.groupboxanimation1.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(18, 30);
-            this.bunifuCards1.Name = "bunifuCards1";
-            this.bunifuCards1.RightSahddow = true;
-            this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(649, 385);
-            this.bunifuCards1.TabIndex = 32;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(5, 86);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 17);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Redirect URIs:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.comboBox1.BorderRadius = 3;
-            this.comboBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.groupboxanimation.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox1.DisabledColor = System.Drawing.Color.Gray;
-            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox1.Items = new string[] {
-        "https://www.google.com",
-        "https://www.memoryhackers.org"};
-            this.comboBox1.Location = new System.Drawing.Point(117, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
-            this.comboBox1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBox1.selectedIndex = 0;
-            this.comboBox1.Size = new System.Drawing.Size(241, 25);
-            this.comboBox1.TabIndex = 43;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(10, 281);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 17);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Response_Uri:";
-            // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Green;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.bunifuMetroTextbox1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuMetroTextbox1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuMetroTextbox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.bunifuMetroTextbox1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Lime;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(111, 278);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(495, 26);
-            this.bunifuMetroTextbox1.TabIndex = 35;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(10, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 17);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Get_Url:";
-            // 
-            // client_id_textbox
-            // 
-            this.client_id_textbox.BorderColorFocused = System.Drawing.Color.Green;
-            this.client_id_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.client_id_textbox.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.client_id_textbox.BorderThickness = 1;
-            this.client_id_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.client_id_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.client_id_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.client_id_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.client_id_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.client_id_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.client_id_textbox.ForeColor = System.Drawing.Color.Silver;
-            this.client_id_textbox.isPassword = false;
-            this.client_id_textbox.Location = new System.Drawing.Point(117, 13);
-            this.client_id_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.client_id_textbox.Name = "client_id_textbox";
-            this.client_id_textbox.Size = new System.Drawing.Size(495, 25);
-            this.client_id_textbox.TabIndex = 30;
-            this.client_id_textbox.Text = "35be1f197514464883f07682d52ffbef";
-            this.client_id_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // authorization_button
-            // 
-            this.authorization_button.ActiveBorderThickness = 1;
-            this.authorization_button.ActiveCornerRadius = 20;
-            this.authorization_button.ActiveFillColor = System.Drawing.Color.Green;
-            this.authorization_button.ActiveForecolor = System.Drawing.Color.White;
-            this.authorization_button.ActiveLineColor = System.Drawing.Color.Green;
-            this.authorization_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.authorization_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("authorization_button.BackgroundImage")));
-            this.authorization_button.ButtonText = "Get Auth Link";
-            this.authorization_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation.SetDecoration(this.authorization_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.authorization_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.authorization_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.authorization_button, BunifuAnimatorNS.DecorationType.None);
-            this.authorization_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.authorization_button.ForeColor = System.Drawing.Color.SeaGreen;
-            this.authorization_button.IdleBorderThickness = 1;
-            this.authorization_button.IdleCornerRadius = 20;
-            this.authorization_button.IdleFillColor = System.Drawing.Color.White;
-            this.authorization_button.IdleForecolor = System.Drawing.Color.Green;
-            this.authorization_button.IdleLineColor = System.Drawing.Color.Green;
-            this.authorization_button.Location = new System.Drawing.Point(13, 313);
-            this.authorization_button.Margin = new System.Windows.Forms.Padding(5);
-            this.authorization_button.Name = "authorization_button";
-            this.authorization_button.Size = new System.Drawing.Size(604, 58);
-            this.authorization_button.TabIndex = 17;
-            this.authorization_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.authorization_button.Click += new System.EventHandler(this.authorization_button_Click);
-            // 
-            // client_sr_textbox
-            // 
-            this.client_sr_textbox.BorderColorFocused = System.Drawing.Color.Green;
-            this.client_sr_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.client_sr_textbox.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.client_sr_textbox.BorderThickness = 1;
-            this.client_sr_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.client_sr_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.client_sr_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.client_sr_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.client_sr_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.client_sr_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.client_sr_textbox.ForeColor = System.Drawing.Color.Silver;
-            this.client_sr_textbox.isPassword = false;
-            this.client_sr_textbox.Location = new System.Drawing.Point(117, 46);
-            this.client_sr_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.client_sr_textbox.Name = "client_sr_textbox";
-            this.client_sr_textbox.Size = new System.Drawing.Size(495, 25);
-            this.client_sr_textbox.TabIndex = 31;
-            this.client_sr_textbox.Text = "e5a55d6faab34a8ab23e900223c6a005";
-            this.client_sr_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(5, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Auth_Client_id:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(5, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Auth_Client_sr:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox1, BunifuAnimatorNS.DecorationType.None);
-            this.listBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox1.ForeColor = System.Drawing.Color.Silver;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 17;
-            this.listBox1.Items.AddRange(new object[] {
-            "ugc-image-upload",
-            "user-read-playback-state",
-            "user-modify-playback-state",
-            "user-read-currently-playing",
-            "app-remote-control",
-            "user-read-email",
-            "user-read-private",
-            "playlist-read-collaborative",
-            "playlist-modify-public",
-            "playlist-read-private",
-            "playlist-modify-private",
-            "user-library-modify",
-            "user-library-read",
-            "user-top-read",
-            "user-read-recently-played",
-            "user-follow-read",
-            "user-follow-modify"});
-            this.listBox1.Location = new System.Drawing.Point(111, 121);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox1.Size = new System.Drawing.Size(495, 104);
-            this.listBox1.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderColorFocused = System.Drawing.Color.Green;
-            this.textBox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox3.BorderColorMouseHover = System.Drawing.Color.Green;
-            this.textBox3.BorderThickness = 3;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.textBox3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.textBox3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.textBox3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.textBox3, BunifuAnimatorNS.DecorationType.None);
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBox3.ForeColor = System.Drawing.Color.Red;
-            this.textBox3.isPassword = false;
-            this.textBox3.Location = new System.Drawing.Point(111, 235);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(495, 26);
-            this.textBox3.TabIndex = 20;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(21, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Scopes:";
-            // 
-            // bunifuCards2
-            // 
-            this.bunifuCards2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.bunifuCards2.BorderRadius = 5;
-            this.bunifuCards2.BottomSahddow = true;
-            this.bunifuCards2.color = System.Drawing.Color.Lime;
-            this.bunifuCards2.Controls.Add(this.expires_textbox);
-            this.bunifuCards2.Controls.Add(this.label12);
-            this.bunifuCards2.Controls.Add(this.tokentype_textbox);
-            this.bunifuCards2.Controls.Add(this.label11);
-            this.bunifuCards2.Controls.Add(this.refresh_textbox);
-            this.bunifuCards2.Controls.Add(this.label10);
-            this.bunifuCards2.Controls.Add(this.label9);
-            this.bunifuCards2.Controls.Add(this.access_textbox);
-            this.bunifuCards2.Controls.Add(this.label8);
-            this.bunifuCards2.Controls.Add(this.textBox5);
-            this.bunifuCards2.Controls.Add(this.label7);
-            this.bunifuCards2.Controls.Add(this.richTextBox1);
-            this.bunifuCards2.Controls.Add(this.get_tokens_button);
-            this.bunifuCards2.Controls.Add(this.textBox4);
-            this.groupboxanimation1.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(674, 32);
-            this.bunifuCards2.Name = "bunifuCards2";
-            this.bunifuCards2.RightSahddow = true;
-            this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(70, 66);
-            this.bunifuCards2.TabIndex = 33;
-            // 
-            // expires_textbox
-            // 
-            this.expires_textbox.BorderColorFocused = System.Drawing.Color.Lime;
-            this.expires_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.expires_textbox.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.expires_textbox.BorderThickness = 1;
-            this.expires_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.expires_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.expires_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.expires_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.expires_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.expires_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.expires_textbox.ForeColor = System.Drawing.Color.Lime;
-            this.expires_textbox.isPassword = false;
-            this.expires_textbox.Location = new System.Drawing.Point(136, 508);
-            this.expires_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.expires_textbox.Name = "expires_textbox";
-            this.expires_textbox.Size = new System.Drawing.Size(495, 25);
-            this.expires_textbox.TabIndex = 48;
-            this.expires_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(22, 516);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 17);
-            this.label12.TabIndex = 47;
-            this.label12.Text = "expires_in:";
-            // 
-            // tokentype_textbox
-            // 
-            this.tokentype_textbox.BorderColorFocused = System.Drawing.Color.Lime;
-            this.tokentype_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tokentype_textbox.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.tokentype_textbox.BorderThickness = 1;
-            this.tokentype_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.tokentype_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.tokentype_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.tokentype_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.tokentype_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.tokentype_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tokentype_textbox.ForeColor = System.Drawing.Color.Lime;
-            this.tokentype_textbox.isPassword = false;
-            this.tokentype_textbox.Location = new System.Drawing.Point(136, 464);
-            this.tokentype_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.tokentype_textbox.Name = "tokentype_textbox";
-            this.tokentype_textbox.Size = new System.Drawing.Size(495, 25);
-            this.tokentype_textbox.TabIndex = 46;
-            this.tokentype_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(22, 431);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 17);
-            this.label11.TabIndex = 45;
-            this.label11.Text = "Refresh_token:";
-            // 
-            // refresh_textbox
-            // 
-            this.refresh_textbox.BorderColorFocused = System.Drawing.Color.Lime;
-            this.refresh_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.refresh_textbox.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.refresh_textbox.BorderThickness = 1;
-            this.refresh_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.refresh_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.refresh_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.refresh_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.refresh_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.refresh_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.refresh_textbox.ForeColor = System.Drawing.Color.Lime;
-            this.refresh_textbox.isPassword = false;
-            this.refresh_textbox.Location = new System.Drawing.Point(136, 426);
-            this.refresh_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.refresh_textbox.Name = "refresh_textbox";
-            this.refresh_textbox.Size = new System.Drawing.Size(495, 25);
-            this.refresh_textbox.TabIndex = 44;
-            this.refresh_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(22, 472);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 17);
-            this.label10.TabIndex = 43;
-            this.label10.Text = "token_type:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(22, 397);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 17);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "Access_token:";
-            // 
-            // access_textbox
-            // 
-            this.access_textbox.BorderColorFocused = System.Drawing.Color.Lime;
-            this.access_textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.access_textbox.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.access_textbox.BorderThickness = 1;
-            this.access_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.access_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.access_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.access_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.access_textbox, BunifuAnimatorNS.DecorationType.None);
-            this.access_textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.access_textbox.ForeColor = System.Drawing.Color.Lime;
-            this.access_textbox.isPassword = false;
-            this.access_textbox.Location = new System.Drawing.Point(136, 392);
-            this.access_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.access_textbox.Name = "access_textbox";
-            this.access_textbox.Size = new System.Drawing.Size(495, 25);
-            this.access_textbox.TabIndex = 41;
-            this.access_textbox.Text = resources.GetString("access_textbox.Text");
-            this.access_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(19, 49);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 17);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Code:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderColorFocused = System.Drawing.Color.Lime;
-            this.textBox5.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox5.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.textBox5.BorderThickness = 1;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.textBox5, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.textBox5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.textBox5, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.textBox5, BunifuAnimatorNS.DecorationType.None);
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBox5.ForeColor = System.Drawing.Color.Lime;
-            this.textBox5.isPassword = false;
-            this.textBox5.Location = new System.Drawing.Point(136, 49);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(495, 25);
-            this.textBox5.TabIndex = 39;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(19, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 17);
-            this.label7.TabIndex = 38;
-            this.label7.Text = "Response_Uri:";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.groupboxanimation1.SetDecoration(this.richTextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.richTextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.richTextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.richTextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.richTextBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.richTextBox1.ForeColor = System.Drawing.Color.Silver;
-            this.richTextBox1.Location = new System.Drawing.Point(22, 161);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(609, 224);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
-            // 
-            // get_tokens_button
-            // 
-            this.get_tokens_button.ActiveBorderThickness = 1;
-            this.get_tokens_button.ActiveCornerRadius = 20;
-            this.get_tokens_button.ActiveFillColor = System.Drawing.Color.Green;
-            this.get_tokens_button.ActiveForecolor = System.Drawing.Color.White;
-            this.get_tokens_button.ActiveLineColor = System.Drawing.Color.Green;
-            this.get_tokens_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.get_tokens_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("get_tokens_button.BackgroundImage")));
-            this.get_tokens_button.ButtonText = "Get Tokens";
-            this.get_tokens_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupboxanimation.SetDecoration(this.get_tokens_button, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.get_tokens_button, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.get_tokens_button, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.get_tokens_button, BunifuAnimatorNS.DecorationType.None);
-            this.get_tokens_button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.get_tokens_button.ForeColor = System.Drawing.Color.SeaGreen;
-            this.get_tokens_button.IdleBorderThickness = 1;
-            this.get_tokens_button.IdleCornerRadius = 20;
-            this.get_tokens_button.IdleFillColor = System.Drawing.Color.White;
-            this.get_tokens_button.IdleForecolor = System.Drawing.Color.Green;
-            this.get_tokens_button.IdleLineColor = System.Drawing.Color.Green;
-            this.get_tokens_button.Location = new System.Drawing.Point(22, 95);
-            this.get_tokens_button.Margin = new System.Windows.Forms.Padding(5);
-            this.get_tokens_button.Name = "get_tokens_button";
-            this.get_tokens_button.Size = new System.Drawing.Size(609, 58);
-            this.get_tokens_button.TabIndex = 37;
-            this.get_tokens_button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.get_tokens_button.Click += new System.EventHandler(this.get_tokens_button_Click);
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderColorFocused = System.Drawing.Color.Lime;
-            this.textBox4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.BorderColorMouseHover = System.Drawing.Color.Lime;
-            this.textBox4.BorderThickness = 1;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.groupboxanimation.SetDecoration(this.textBox4, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.textBox4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.textBox4, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.textBox4, BunifuAnimatorNS.DecorationType.None);
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBox4.ForeColor = System.Drawing.Color.Red;
-            this.textBox4.isPassword = false;
-            this.textBox4.Location = new System.Drawing.Point(136, 16);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(495, 25);
-            this.textBox4.TabIndex = 32;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // listBox3
-            // 
-            this.listBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.listBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logoAnimator.SetDecoration(this.listBox3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.listBox3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.listBox3, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation.SetDecoration(this.listBox3, BunifuAnimatorNS.DecorationType.None);
-            this.listBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.listBox3.ForeColor = System.Drawing.Color.Silver;
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 17;
-            this.listBox3.Location = new System.Drawing.Point(1704, 267);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listBox3.Size = new System.Drawing.Size(21, 36);
-            this.listBox3.TabIndex = 88;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.groupboxanimation.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.groupboxanimation1.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.label25.Location = new System.Drawing.Point(1712, 330);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 13);
-            this.label25.TabIndex = 99;
-            this.label25.Text = "label25";
             // 
             // logoAnimator
             // 
@@ -2583,13 +1999,6 @@
             this.groupboxanimation.MaxAnimationTime = 1000;
             this.groupboxanimation.TimeStep = 0.06F;
             // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.header;
-            this.bunifuDragControl1.Vertical = true;
-            // 
             // groupboxanimation1
             // 
             this.groupboxanimation1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
@@ -2613,10 +2022,10 @@
             this.groupboxanimation1.MaxAnimationTime = 1000;
             this.groupboxanimation1.TimeStep = 0.06F;
             // 
-            // timer1
+            // api_timer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.api_timer.Interval = 1000;
+            this.api_timer.Tick += new System.EventHandler(this.api_timer_Tick);
             // 
             // serialPort1
             // 
@@ -2636,7 +2045,6 @@
             // 
             // info_gonder
             // 
-            this.info_gonder.Enabled = true;
             this.info_gonder.Interval = 500;
             this.info_gonder.Tick += new System.EventHandler(this.info_gonder_Tick);
             // 
@@ -2644,14 +2052,18 @@
             // 
             this.button_locals.Enabled = true;
             this.button_locals.Interval = 1;
-            this.button_locals.Tick += new System.EventHandler(this.button_locals_Tick);
             // 
-            // Form1
+            // refresh_timer
+            // 
+            this.refresh_timer.Interval = 1000;
+            this.refresh_timer.Tick += new System.EventHandler(this.refresh_timer_Tick);
+            // 
+            // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(2027, 1061);
+            this.ClientSize = new System.Drawing.Size(847, 830);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.sidemenu);
             this.Controls.Add(this.bunifuSeparator1);
@@ -2661,36 +2073,32 @@
             this.groupboxanimation1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.groupboxanimation.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "main_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arduino Spotify Project by Nader11ndeu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.sidemenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMnu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.form_minimize_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form_close_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sidemenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMnu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
-            this.bunifuCards3.ResumeLayout(false);
-            this.bunifuCards3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.retry_port_button)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.control_groupbox.ResumeLayout(false);
+            this.control_groupbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.next_song_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.previous_song_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.play_song_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pause_song_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.bunifuCards1.ResumeLayout(false);
-            this.bunifuCards1.PerformLayout();
-            this.bunifuCards2.ResumeLayout(false);
-            this.bunifuCards2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.retry_port_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.album_picturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2701,24 +2109,21 @@
         private System.Windows.Forms.Panel sidemenu;
         private System.Windows.Forms.PictureBox logo;
         private Bunifu.Framework.UI.BunifuImageButton btnMnu;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
-        private Bunifu.Framework.UI.BunifuFlatButton tabButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton tabButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton tabButton3;
+        private Bunifu.Framework.UI.BunifuFlatButton auth_tab;
+        private Bunifu.Framework.UI.BunifuFlatButton Access_tab;
+        private Bunifu.Framework.UI.BunifuFlatButton Control_tab;
         private BunifuAnimatorNS.BunifuTransition PanelAnimator;
         private BunifuAnimatorNS.BunifuTransition logoAnimator;
         private BunifuAnimatorNS.BunifuTransition groupboxanimation;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private BunifuAnimatorNS.BunifuTransition groupboxanimation1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer api_timer;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer remotecontrol;
         private System.Windows.Forms.Timer timer2;
         private GradientPanel gradientPanel1;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ListBox listBox5;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
+        private System.Windows.Forms.ListBox featuredlist_uri;
+        private System.Windows.Forms.ListBox featuredlist_name;
+        private Bunifu.Framework.UI.BunifuCards control_groupbox;
         private Bunifu.Framework.UI.BunifuMetroTextbox playlist_name_textbox;
         private System.Windows.Forms.Label label33;
         private Bunifu.Framework.UI.BunifuMetroTextbox playback_type_textbox;
@@ -2737,24 +2142,20 @@
         private System.Windows.Forms.ListBox connected_devices;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox fav_name_list;
         private Bunifu.Framework.UI.BunifuVTrackbar volume_trackbar;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label volume_str;
         private Bunifu.Framework.UI.BunifuThinButton2 port_connect;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox name_list;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private Bunifu.Framework.UI.BunifuImageButton next_song_button;
-        private Bunifu.Framework.UI.BunifuImageButton previous_song_button;
-        private Bunifu.Framework.UI.BunifuImageButton play_song_button;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private Bunifu.Framework.UI.BunifuSlider slider1;
-        private Bunifu.Framework.UI.BunifuImageButton pause_song_button;
+        private System.Windows.Forms.Label duration_current;
+        private System.Windows.Forms.Label duration_max;
+        private Bunifu.Framework.UI.BunifuSlider duration_slider;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox album_picturebox;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label20;
@@ -2771,54 +2172,34 @@
         private Bunifu.Framework.UI.BunifuThinButton2 connect_api;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuMetroTextbox playlist_uri_textbox;
-        private System.Windows.Forms.WebBrowser webBrowser1;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuDropdown comboBox1;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
-        private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox client_id_textbox;
-        private Bunifu.Framework.UI.BunifuThinButton2 authorization_button;
-        private Bunifu.Framework.UI.BunifuMetroTextbox client_sr_textbox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox textBox3;
-        private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox expires_textbox;
-        private System.Windows.Forms.Label label12;
-        private Bunifu.Framework.UI.BunifuMetroTextbox tokentype_textbox;
-        private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuMetroTextbox refresh_textbox;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuMetroTextbox access_textbox;
-        private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMetroTextbox textBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private Bunifu.Framework.UI.BunifuThinButton2 get_tokens_button;
-        private Bunifu.Framework.UI.BunifuMetroTextbox textBox4;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox uri_list;
         private System.Windows.Forms.ListBox devices_id;
         private System.Windows.Forms.Label label34;
         private Bunifu.Framework.UI.BunifuDropdown market_list_combobox;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private Bunifu.Framework.UI.BunifuDropdown comboBox2;
+        private Bunifu.Framework.UI.BunifuDropdown port_combo;
         private Bunifu.Framework.UI.BunifuDropdown featured_list_combobox;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private Bunifu.Framework.UI.BunifuImageButton retry_port_button;
         private System.Windows.Forms.Timer info_gonder;
+        private System.Windows.Forms.Timer button_locals;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label token_timestr;
+        private System.Windows.Forms.Timer refresh_timer;
+        private nader11ndeu.authnew authnew1;
+        public System.Windows.Forms.WebBrowser webBrowser1;
+        private nader11ndeu.accesspo accesspo1;
+        private Bunifu.Framework.UI.BunifuImageButton next_song_button;
+        private Bunifu.Framework.UI.BunifuImageButton previous_song_button;
+        private Bunifu.Framework.UI.BunifuImageButton play_song_button;
+        private Bunifu.Framework.UI.BunifuImageButton pause_song_button;
         private System.Windows.Forms.Panel header;
         private Bunifu.Framework.UI.BunifuImageButton form_minimize_button;
         private Bunifu.Framework.UI.BunifuImageButton form_close_button;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Timer button_locals;
+        private Bunifu.Framework.UI.BunifuCustomLabel form_title;
     }
 }
 
