@@ -13,7 +13,7 @@ Spotify API-Net: https://github.com/JohnnyCrazy/SpotifyAPI-NET
 
 Bunifu Framework: https://bunifuframework.com/
 
- 
+  
 # How it Works ? What it Does ? etc (Purpose of this project)
 
 Well, with this project we will be able to control active spotify devices with Arduino. How we gonna do that ? We will use serial communication.
@@ -54,6 +54,7 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 * Play your favorite list (with remote controller, application)
 * Set Shuffle (with remote controller, application)
 * Display Singer and Song name on LCD Screen
+* Auto refresh token (new feature)
 ```
 
 # Arduino Circuit
