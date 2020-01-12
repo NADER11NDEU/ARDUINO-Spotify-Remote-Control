@@ -25,14 +25,13 @@ namespace nader11ndeu
             string scopes = string.Empty;
            
             if (comboBox1.selectedIndex == 0)
-
-            
-                WindowsFormsApp1.main_form.redirect_uri = "https://www.google.com";
+            WindowsFormsApp1.main_form.redirect_uri = "https://www.google.com";
             else if (comboBox1.selectedIndex == 1)
-                WindowsFormsApp1.main_form.redirect_uri = "https://memoryhackers.org";
+            WindowsFormsApp1.main_form.redirect_uri = "https://memoryhackers.org";
 
             WindowsFormsApp1.main_form.auth_token.client_id = client_id_textbox.Text;
             WindowsFormsApp1.main_form.auth_token.client_secret = client_sr_textbox.Text;
+            
             foreach (int i in listBox1.SelectedIndices)
             {
                 scopes += listBox1.Items[i] + "%20";
