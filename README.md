@@ -61,6 +61,9 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
 
+# Arduino Circuit with HC05 Bluetooth Module 
+![alt_text](https://i.imgur.com/02xA6jN.png)
+
 # Circuit Elements
 ```
 1- Remote Controller
