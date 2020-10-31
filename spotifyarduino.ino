@@ -92,7 +92,7 @@ bool just_once = true;
   /////////////// END OF GETTING INFORMATIONS ///////////////////////////////////////////
   }
 if (just_once == true)
-my_main.lenght_of_buttons_array = sizeof(my_button_array) / sizeof(my_button_array[0]); // button arrayın kaç elemanı var ?
+my_main.lenght_of_buttons_array = sizeof(my_button_array) / sizeof(my_button_array[0]); 
 just_once = false;
 
 if (!justonce){ //Write button arrays into structs once.
