@@ -1,4 +1,4 @@
-# Hi 
+# Main 
 
 Hello, this is an university project which we have to use arduino. So I decided to make remote control for active devices which are using Spotify at the same time. I didnt work on C# before,so some of my codes may seem absurd or unnecessary to you, just ignore them. See this project as a reference and find out what works for you.
 
@@ -14,7 +14,7 @@ Spotify API-Net: https://github.com/JohnnyCrazy/SpotifyAPI-NET
 Bunifu Framework: https://bunifuframework.com/
 
   
-# How it Works ? What it Does ? etc (Purpose of this project)
+# Purpose of this project
 
 Well, with this project we will be able to control active spotify devices with Arduino. How we gonna do that ? We will use serial communication.
 
@@ -61,8 +61,10 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
 ![alt_text](https://i.imgur.com/TlGhO2C.png)
 
-# Arduino Circuit with HC05 Bluetooth Module 
+# Arduino Circuit with HC05 Bluetooth Module
 ![alt_text](https://i.imgur.com/02xA6jN.png)
+
+You can adapt it to our project with small changes, just search for tutorial on the web. If it is your first time with arduino and coding, and if you do not know what are you doing, just use serial communication with usb port. If you have a problem with HC05 , let me know.
 
 # Circuit Elements
 ```
@@ -94,15 +96,18 @@ Button Array:
 {0xFFE01F,0xFFA857,0xFFC23D,0xFF02FD,0xFF22DD,0xFFE21D,0xFFA25D,0xFF629D,0xFF6897,0xFF30CF,0xFF18E7,0xFF7A85,0xFF10EF,0xFF38C7,0xFF5AA5,0xFF42BD,0xFF4AB5,0xFF52AD,0xFF906F,0xFF9867,0xFFB04F,0xFFA857};
 ```
 
-# Credits:
+# Release
+https://github.com/NADER11NDEU/ARDUINO-Spotify-Remote-Control/releases/tag/1.1
+
+# Special Thanks to:
 
 1- [JohnnyCrazy](https://github.com/JohnnyCrazy) for his awesome Spotify .NET Api (it saved my time).
 
 2- [Bunifu Framework](https://bunifuframework.com/) I designed my form with this framework.
 
-3- Dr. Onur Bugra KOLCU - He taught arduino to me and his students in a short time.
+3- Dr. Onur Bugra KOLCU  (He taught arduino to me and his students in a short time.)
 
-4- Nader11ndeu (me)
+ 
 
 
  
