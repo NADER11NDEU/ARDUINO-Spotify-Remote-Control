@@ -57,14 +57,15 @@ My suggestion: Use bluetooth module for send your data to computer, and power up
 * Auto refresh token (new feature)
 ```
 
-# Arduino Circuit
-![alt_text](https://i.imgur.com/zyQlwpS.png)
-![alt_text](https://i.imgur.com/TlGhO2C.png)
-
 # Arduino Circuit with HC05 Bluetooth Module
 ![alt_text](https://i.imgur.com/02xA6jN.png)
 
-You can adapt it to our project with small changes, just search for tutorial on the web. If it is your first time with arduino and coding, and if you do not know what are you doing, just use serial communication with usb port. If you have a problem with HC05 , let me know.
+You can adapt it to our project with small changes, just search for tutorial on the web. If it is your first time with arduino and coding, and if you do not know what you are doing, just use serial communication with usb port. If you have a problem with HC05 , let me know.
+
+
+# Arduino Circuit (for this project)
+![alt_text](https://i.imgur.com/zyQlwpS.png)
+![alt_text](https://i.imgur.com/TlGhO2C.png)
 
 # Circuit Elements
 ```
