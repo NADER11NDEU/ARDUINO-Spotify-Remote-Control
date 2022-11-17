@@ -101,14 +101,5 @@ Button Array:
 https://github.com/NADER11NDEU/ARDUINO-Spotify-Remote-Control/releases/tag/1.1
 
 # Special Thanks to:
-
-1- [JohnnyCrazy](https://github.com/JohnnyCrazy) for his awesome Spotify .NET Api (it saved my time).
-
-2- [Bunifu Framework](https://bunifuframework.com/) I designed my form with this framework.
-
-3- Dr. Onur Bugra KOLCU  (He taught arduino to me and his students in a short time.)
-
- 
-
-
- 
+[JohnnyCrazy](https://github.com/JohnnyCrazy) for his awesome Spotify .NET Api (it saved my time).
+[Bunifu Framework](https://bunifuframework.com/) I designed my form with this framework.
