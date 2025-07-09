@@ -1,6 +1,7 @@
 # Main 
 
-Hello, this is an university project which we have to use arduino. So I decided to make remote control for active devices which are using Spotify at the same time. I didnt work on C# before,so some of my codes may seem absurd or unnecessary to you, just ignore them. See this project as a reference and find out what works for you.
+This is a university project where we were required to use Arduino. So, I decided to build a remote control system for active Spotify devices using Arduino.
+I’ve never worked with C# before, so some of my code might seem a bit strange or unnecessary—feel free to ignore those parts. Instead, treat this project as a reference and adapt what works for you.
 
 Arduino Spotify Control With C# Spotify Api
 
@@ -16,52 +17,59 @@ Bunifu Framework: https://bunifuframework.com/
   
 # Purpose of this project
 
-Well, with this project we will be able to control active spotify devices with Arduino. How we gonna do that ? We will use serial communication.
+The goal is to control active Spotify devices using an Arduino.
+How are we going to do that? Through serial communication.
 
-We will connect our arduino with our pc (use USB2.0 / 3.0) , and arduino will read which button we pressed on remote controller (ir reciver), then it will send it to our C# application. Our C# application will read which button we pressed and for example if we pressed stop music button then it will stop the music. Also our C# application will send Music Name & Singer Name. And we will display them on our 16x2 LCD Display Screen. 
-It is simple like that. If you have wifi module , you can do nearly same things (like stop,play music, go next etc) but as you know arduino actually does not have multi threading support so you have to deal with a lot of bugs. Thats why I made it on computer, not on Arduino. Also I hadnt have wifi module.
+We’ll connect the Arduino to a PC (via USB 2.0 / 3.0). The Arduino reads which button is pressed on the remote controller (via IR receiver), then sends that information to a C# application.
+The C# app interprets the command—for example, if the stop button was pressed, it stops the music.
+Additionally, the app fetches the music title and artist name, and displays them on a 16x2 LCD screen.
 
-My suggestion: Use bluetooth module for send your data to computer, and power up arduino with rechargable battery. As I said before, use this project as referance :) 
+That’s basically it. If you have a Wi-Fi module, you could implement similar functionality (play, pause, next track, etc.), but since Arduino doesn’t support multithreading, you’ll likely run into bugs. That’s why I decided to handle the logic on the PC instead of the Arduino.
+Also… I didn’t have a Wi-Fi module 😅
+
+My suggestion: Use a Bluetooth module to send data to your computer and power your Arduino with a rechargeable battery.
+Again, use this project as a reference. :)
 
 # Usage
 ```
-1- Download our C# source
-2- Open it with Visual Studio
-3- Press Add Reference and select Bunifu_UI_v1.5.3.dll (you can get this dll from Release.)
-4- Build the project and reopen visual studio and our project.
-5- Change "Auth_Client_id ,Auth_Client_sr and Redirect URI's (you can get your client id, client sr and r_uris on your spotify dashboard, just create new client on your spotify developer dashboard)
-6- Run our application
-7- Select scopes and press Get Auth Link
-8- It will ask you for premission, accept it. (I used webbrowser)
-9- Press Spotify Access Token button on tab menu
-10- Press Get Tokens button
-11- Now we have access token, refresh token etc. We can start Spotify NET API ...
-12- Press Spotify Control button on Tab Menu
-13- Press Connect to Api, now you will debug which devices are connected with spotify, what is current song etc etc.
-14- Select your arduino port and press Connect to Port
-15- Now you can control your active devices spotify with your remote controller. Have a fun :)
+1-Download the C# source code.
+2-Open it with Visual Studio.
+3-Click "Add Reference", then select Bunifu_UI_v1.5.3.dll (you can find it in the release folder).
+4-Build the project, then reopen both Visual Studio and the project.
+5-Edit the Auth_Client_Id, Auth_Client_Secret, and Redirect URI values (get them from your Spotify Developer Dashboard by creating a new client).
+6-Run the application.
+7-Select the necessary scopes and click "Get Auth Link".
+8-A browser window will ask for permission—accept it.
+9-In the Tab Menu, go to Spotify Access Token.
+10-Press "Get Tokens".
+11-Now you have an access token, refresh token, etc. You can start using the Spotify .NET API.
+12-Go to Spotify Control in the Tab Menu.
+13-Press "Connect to API". You’ll now see connected devices, the current song, etc.
+14-Select your Arduino COM port and press "Connect to Port".
+15-That’s it! You can now control Spotify on your active device using your remote controller. Have fun! 🎉
 ```
 
 # Features
 ```
-* Display Album , track, list informations.
-* Display Album Image
-* Control Volume, next song etc. (with remote controller, application)
-* Display Featured list, featured market
-* Play Featured list (with remote controller, application)
-* Add current song to your spotify favorite list (with remote controller, application)
-* Delete current song from your spotify favorite list (with remote controller, application)
-* Play your favorite list (with remote controller, application)
-* Set Shuffle (with remote controller, application)
-* Display Singer and Song name on LCD Screen
-* Auto refresh token (new feature)
+*Display album, track, and playlist info
+*Show album art
+*Control volume, play next/previous song (via remote or app)
+*Browse featured playlists by market
+*Play featured lists (via remote or app)
+*Add current song to favorites (via remote or app)
+*Remove current song from favorites (via remote or app)
+*Play your favorite playlist (via remote or app)
+*Enable shuffle mode (via remote or app)
+*Show artist and song name on LCD screen
+*Auto refresh token (new feature)
 ```
 
 # Arduino Circuit with HC05 Bluetooth Module
 ![alt_text](https://i.imgur.com/02xA6jN.png)
 
-You can adapt it to our project with small changes, just search for tutorial on the web. If it is your first time with arduino and coding, and if you do not know what you are doing, just use serial communication with usb port. If you have a problem with HC05 , let me know.
-
+You can easily adapt this project with some minor changes. Just search for tutorials online.
+If it’s your first time with Arduino and programming—and you don’t know where to start—stick to serial communication via USB.
+If you run into problems with the HC-05, feel free to reach out.
 
 # Arduino Circuit (for this project)
 ![alt_text](https://i.imgur.com/zyQlwpS.png)
@@ -80,21 +88,19 @@ You can adapt it to our project with small changes, just search for tutorial on 
 ![alt_text](https://i.imgur.com/3LikE9M.png)
 
 ```
-CH- : Delete current song from user favorite list
-CH+:  Add current song to user favorite list
-CH:   Play user favorite list
-|<<:  Play previous track
->>|:  Play next track
-|> Play_Pause.
--	: Volume down.
-+ : Volume up.
-EQ:  Change featured list country
-0-9: Play track list on featured list. (0-9 index number)
-100+: |<<< : Skip 30 secs, EQ: shuffle = !shuffle 
-200+: |<<< : Skip 60 secs, EQ: shuffle = !shuffle
+CH-    : Delete current song from user's favorites  
+CH+    : Add current song to user's favorites  
+CH     : Play user's favorite playlist  
+|<<    : Previous track  
+>>|    : Next track  
+|>     : Play/Pause  
+-      : Volume down  
++      : Volume up  
+EQ     : Change featured list's country  
+0–9    : Play track from featured list (index 0–9)  
+100+   : Skip 30 seconds, toggle shuffle  
+200+   : Skip 60 seconds, toggle shuffle  
 
-Button Array:
-{0xFFE01F,0xFFA857,0xFFC23D,0xFF02FD,0xFF22DD,0xFFE21D,0xFFA25D,0xFF629D,0xFF6897,0xFF30CF,0xFF18E7,0xFF7A85,0xFF10EF,0xFF38C7,0xFF5AA5,0xFF42BD,0xFF4AB5,0xFF52AD,0xFF906F,0xFF9867,0xFFB04F,0xFFA857};
 ```
 
 # Release
